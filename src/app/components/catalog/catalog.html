@@ -1,0 +1,82 @@
+<div id="catalog">
+    <div class="title">
+        <h2>Nuestros <br> productos!</h2>
+    </div>
+    <section class="header">
+        <div class="input-wrapper">
+            <input type="text" class="search-input" [(ngModel)]="searchTerm" (ngModelChange)="setSearchTerm()"
+                placeholder="Buscar por nombre o ID...">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        </div>
+
+        <div class="filters-container">
+            <div class="dropdown-container">
+                <label for="dropdown-cat">Categoría:</label>
+                <select name="category" id="dropdown-cat" [value]="catFilter()" (change)="onCategoriaChange($event)">
+                    <option [value]="''">Todas</option>
+                    @for (cat of categorias; track cat.key) {
+                    <option [value]="cat.value">{{ cat.value | titlecase }}</option>
+                    }
+                </select>
+            </div>
+
+            <div class="dropdown-container">
+                <label for="dropdown-um">u. medida:</label>
+                <select name="um" id="dropdown-um" [(ngModel)]="umFilter" (change)="onUmChange()">
+                    <option value="unidad">Unidad</option>
+                    <option value="caja">Caja</option>
+                </select>
+            </div>
+            <div class="dropdown-container">
+                <label for="dropdown-group">Agrupar por:</label>
+                <select name="group" id="dropdown-group" (change)="onGroupChange($event)">
+                    <option value="category">Categoría</option>
+                    <option value="brand">Marca</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    @if (!groupedProds()) {
+    <p class="loading">Cargando productos
+        <span class="dot" style="--i: 0">.</span>
+        <span class="dot" style="--i: 1">.</span>
+        <span class="dot" style="--i: 2">.</span>
+    </p>
+    }
+    @else if (groupedProds()!.length === 0) {
+    <p class="no-results">No hay coincidencias</p>
+    }
+    @else {
+    @for (grouped of groupedProds(); track grouped.group) {
+    <h2 class="category-title">{{ grouped.group }}</h2>
+
+    <div class="card-container" data-simplebar>
+        @for (prod of grouped.prods; track prod.id) {
+        @for (f of prod.format; track $index) {
+        <div class="card" [routerLink]="['/detalles', prod.id]" [queryParams]="{formatId: f.formatId}">
+            <p class="product-id">{{ prod.id }}</p>
+            <p class="product-um">u/m: {{ f.um }}</p>
+            <img [src]="f.img" [alt]="prod.prodName + ' ' + f.format" width="200" height="200" class="format-img" />
+            <p class="product-name"><b>{{ prod.prodName }}</b></p>
+            <span class="format-text">
+                <p><b>FORMATO: <span style="font-family: monospace;">{{ f.format }}</span></b></p>
+                <p>{{ f.desc }}</p>
+                <br>
+                @if (!f.price.lvl1) {
+                <p><span style="font-family: monospace;">No disponible</span></p>
+                } @else {
+                <p><span style="font-family: monospace;">{{ f.price.lvl1 | number:'1.2-2' }} €</span></p>
+                }
+            </span>
+            <div class="add-cart" (click)="addToCart(prod, f, $event)">
+                Añadir al carrito
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        }
+        }
+    </div>
+    }
+    }
+</div>

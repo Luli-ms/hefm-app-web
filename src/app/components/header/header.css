@@ -1,0 +1,263 @@
+/* ─────────────── GENERAL LINKS ─────────────── */
+a {
+    display: flex;
+    gap: 5px;
+    color: var(--main-red);
+    text-decoration: none;
+}
+
+a i {
+    margin-right: 10px;
+}
+
+/* ─────────────── NAVBAR LAYOUT ─────────────── */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    padding: 0 3%;
+    z-index: 10;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: var(--opacity-yellow);
+    box-shadow: 0 8px 15px var(--main-red);
+    backdrop-filter: blur(3px);
+    /* soporte en Safari */
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.navbar {
+    z-index: 100;
+}
+
+.home-link img {
+    height: 45px;
+}
+
+header .navbar ul {
+    list-style: none;
+    z-index: 10;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    display: block;
+    padding: 25px;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    transition: all 0.2s ease-in-out;
+    text-decoration: underline wavy 1px transparent;
+    text-decoration-skip-ink: none;
+}
+
+/* Hover/Focus */
+header .navbar ul li a:hover,
+header .navbar ul li a:focus-within {
+    text-decoration-color: var(--accent-color);
+    background-color: var(--main-red);
+    color: var(--accent-color);
+}
+
+.fa-cart-shopping {
+    position: absolute;
+    font-size: 1.1rem;
+}
+
+.cart-length {
+    position: relative;
+    top: -20px;
+    left: 6px;
+
+    font-family: monospace;
+}
+
+/* ─────────────── HAMBURGER TOGGLE ─────────────── */
+#menu-bar {
+    display: none;
+}
+
+header label {
+    padding: 10px;
+    z-index: 99;
+}
+
+header button {
+    z-index: 11;
+
+    display: none;
+    border: none;
+
+    margin-right: 0.5rem;
+    padding: 0 18px;
+    border-radius: 50px;
+}
+
+header button:active {
+    background-color: var(--accent-color);
+}
+
+header button label i {
+    color: var(--main-red);
+
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* ─────────────── SUBMENU ─────────────── */
+
+.has-submenu #catalog-toggle {
+    display: none;
+}
+
+.has-submenu .submenu {
+    display: none;
+    flex-direction: column;
+    border-top: 1px solid var(--main-red);
+    background-color: var(--main-bg);
+}
+
+/* Animación caret-toggle */
+.caret-toggle i {
+    transition: transform 0.3s cubic-bezier(.4, 2, .3, 1);
+    display: inline-block;
+}
+
+.has-submenu #catalog-toggle:checked~.caret-toggle i {
+    transform: rotate(-180deg);
+}
+
+.has-submenu #catalog-toggle:not(:checked)~.caret-toggle i {
+    transform: rotate(0deg);
+}
+
+/* ────── DESKTOP: Submenu on hover ────── */
+@media (min-width: 957px) {
+    .has-submenu .submenu {
+        position: absolute;
+        left: 0;
+        width: 200px;
+        box-shadow: 0 8px 15px var(--main-red);
+    }
+
+    .has-submenu:hover .submenu,
+    .has-submenu:focus-within .submenu {
+        display: flex;
+    }
+
+    .has-submenu .submenu li {
+        width: 100%;
+    }
+
+    .caret-toggle {
+        display: none;
+    }
+}
+
+/* ─────────────── MOBILE STYLES ─────────────── */
+@media (max-width: 956px) {
+
+    /* Overlay */
+    #overlay {
+        position: fixed;
+        background-color: var(--opacity-yellow);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        border-radius: 0%;
+        z-index: 10;
+    }
+
+    #menu-bar:checked~#overlay {
+        display: block;
+    }
+
+    /* Navbar responsive */
+    header {
+        padding: 10px;
+    }
+
+    header button {
+        display: block;
+        background-color: transparent;
+    }
+
+    header button label i {
+        display: block;
+    }
+
+    header .navbar {
+        display: none;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: calc(100vh - 170px);
+        overflow-y: auto;
+
+        border-top: 2px solid var(--main-red);
+        background-color: var(--main-bg);
+        box-shadow: 0 8px 15px var(--main-red);
+    }
+
+    #menu-bar:checked~.navbar {
+        display: block;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+        border-top: 2px solid var(--main-red);
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        border-top: 1px solid var(--main-red);
+        background-color: #fff2d5;
+    }
+
+    /* Catálogo caret icon */
+    a label i {
+        padding: 20px 25px;
+        background-color: var(--opacity-red);
+        border-radius: 50px;
+    }
+
+    header #catalog-span {
+        position: relative;
+    }
+
+    header .caret-toggle {
+        position: absolute;
+        right: 10%;
+        top: 15px;
+
+        padding: 15px 20px;
+        background-color: var(--opacity-red);
+        border-radius: 50px;
+    }
+
+    header .caret-toggle i {
+        color: var(--main-bg);
+        font-size: 0.7rem;
+    }
+
+    .has-submenu #catalog-toggle:checked~.submenu {
+        display: flex;
+    }
+}

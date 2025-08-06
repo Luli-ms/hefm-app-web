@@ -1,0 +1,61 @@
+<header>
+    <div class="home-link">
+        <a routerLink="/">
+            <img src="assets/imgs/logo.png" alt="logo-hefm">
+        </a>
+
+    </div>
+
+    <input type="checkbox" id="menu-bar">
+
+    <button>
+        <label for="menu-bar">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </button>
+
+    <label for="menu-bar" id="overlay"></label>
+
+    <nav class="navbar">
+        <ul>
+            <li class="has-submenu">
+
+                <input type="checkbox" id="catalog-toggle">
+
+                <a [routerLink]="['/']" fragment="catalog" (click)="setCategoria(null)">
+                    <span id="catalog-span">Catálogo</span>
+                </a>
+
+                <label for="catalog-toggle" class="caret-toggle">
+                    <i class="fa fa-caret-down"></i>
+                </label>
+
+                <ul class="submenu">
+                    @for (cat of categorias; track cat.key) {
+                    <li>
+                        <a [routerLink]="['/']" fragment="catalog" (click)="setCategoria(cat.value)">
+                            {{ cat.value | titlecase }}
+                        </a>
+                    </li>
+                    }
+                </ul>
+
+            </li>
+
+            <li>
+                <a [routerLink]="['/carrito']">
+                    <span>Carrito </span>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    @let cart = cartService.cart();
+                    <span class="cart-length"><b>{{cart.length}}</b></span>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['/login']">
+                    <i class="fa fa-user"></i>
+                    <span>Iniciar Sesión</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>

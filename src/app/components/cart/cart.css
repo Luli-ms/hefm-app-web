@@ -1,0 +1,154 @@
+.cart-container {
+    min-height: 100vh;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--main-bg);
+}
+
+.cart-item {
+    position: relative;
+    display: flex;
+    gap: 2rem;
+    background-color: #f0f0f0aa;
+    padding: 2rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    min-height: 450px;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    background: var(--accent-color);
+    padding: 0.3rem 0.5rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--main-red);
+}
+
+.product-image {
+    width: 200px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.item-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 0.3rem;
+
+    max-width: 90%;
+    cursor: pointer;
+}
+
+
+.product-details {
+    font-size: 0.9rem;
+
+    color: var(--accent-color);
+    background-color: var(--main-red);
+
+    margin-bottom: 0.8rem;
+    width: max-content;
+    padding: 5px 20px;
+    border-radius: 50px;
+}
+
+.product-price {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-family: monospace;
+
+    margin-bottom: 1rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.qty-btn {
+    cursor: pointer;
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--main-red);
+
+    background: transparent;
+    border-radius: 50px;
+    background-color: var(--opacity-yellow);
+    padding: 1rem;
+}
+
+.qty-btn:disabled {
+    opacity: 50%;
+    cursor: default;
+}
+
+.qty-value {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.no-prods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    min-height: 100vh;
+
+    text-align: center;
+}
+
+.no-prods a {
+    text-decoration: underline wavy 1px transparent;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: var(--main-red);
+    background-color: var(--main-yellow);
+    box-shadow: 0 8px 15px var(--main-red);
+
+    padding: 25px;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.no-prods a:hover,
+.no-prods a:focus-within {
+    text-decoration-color: var(--accent-color);
+    background-color: var(--main-red);
+    color: var(--accent-color);
+}
+
+@media (max-width: 864px) {
+    .cart-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

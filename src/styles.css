@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+:root {
+    --main-bg: #fff6e1;
+    --main-yellow: #ffba4b;
+    --opacity-yellow: #ffba4bdb;
+    --main-red: #d14545;
+    --opacity-red: #d14545a7;
+    --base-font: 'Raleway', sans-serif;
+    --title-font: 'LimeLight', sans-serif;
+    --accent-color: #ffdc85;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+
+    background-color: var(--main-yellow);
+    border-radius: 50px;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--main-red);
+    border-radius: 50px;
+    border: 3px solid var(--main-yellow);
+}
+
+@supports (-moz-appearance: none) {
+    * {
+        scrollbar-color: var(--main-red) #ffff;
+        scrollbar-width: auto;
+    }
+}
+
+html {
+    font-family: var(--base-font);
+    color: var(--main-red);
+    font-size: 1.5rem;
+    scroll-behavior: smooth;
+
+    /*Uiverse bg*/
+    width: 100%;
+    height: 100%;
+    background:
+        linear-gradient(135deg, var(--opacity-red) 25%, transparent 25%) -50px 0,
+        linear-gradient(225deg, var(--opacity-red) 25%, transparent 25%) -50px 0,
+        linear-gradient(315deg, var(--opacity-red) 25%, transparent 25%),
+        linear-gradient(45deg, var(--opacity-red) 25%, transparent 25%),
+        linear-gradient(to bottom, #eb6025 0%, #eb6025 100%);
+    background-size:
+        100px 100px,
+        100px 100px,
+        100px 100px,
+        100px 100px,
+        100% 100%;
+    background-color: var(--opacity-red);
+    position: relative;
+}
+
+h1,
+h2 {
+    font-family: 'LimeLight', sans-serif;
+}
+
+label {
+    font-size: 0.5rem;
+    font-weight: bolder;
+}
+
+select {
+    z-index: 9;
+
+    /*dropdown perso*/
+    appearance: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    border-radius: 50px;
+    border: 2px solid var(--main-yellow);
+    color: var(--main-red);
+    font-weight: bold;
+    font-family: monospace;
+    padding: 0.5rem 2.75rem 0.5rem 1rem;
+
+    /*Arrow perso*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffff;
+    background-image: url('/assets/imgs/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 1rem;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: var(--main-red);
+    box-shadow: 0 2px 6px var(--main-red);
+}
+
+select option {
+    appearance: none;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    font-family: monospace;
+    font-weight: bold;
+    background-color: var(--main-bg);
+}

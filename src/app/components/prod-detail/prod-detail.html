@@ -1,0 +1,49 @@
+@let producto = selectedProd();
+@let formato = selectedFormat()!;
+
+<div class="prod-container">
+
+    <div class="page-content">
+        @if (producto) {
+        <!-- ID encima, estilo badge -->
+        <div class="id">{{ producto.id }}</div>
+
+        <!-- Imagen del producto -->
+        <div class="img-container">
+            <img [src]="formato.img" [alt]="producto.prodName" />
+        </div>
+
+        <!-- Información del producto y formato -->
+        <div class="prod-info">
+            <h1>{{ producto.prodName }}</h1>
+            <p>{{ formato.desc }}</p>
+
+            <div class="price">
+                {{ formato.price.lvl1 | number:'1.2-2' }} €
+            </div>
+
+            <div class="add-cart" (click)="addToCart(producto, formato)">
+                Añadir al carrito
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+            <!-- Opcional: mostrar formato y unidad -->
+            <div class="dropdown-flex">
+                <div class="dropdown-container">
+                    <label>Formato:</label>
+                    <p>{{ formato.format }}</p>
+                </div>
+                <div class="dropdown-container">
+                    <label>Unidad de medida:</label>
+                    <p>{{ formato.um }}</p>
+                </div>
+            </div>
+        </div>
+        } @else {
+        <p class="loading">Cargando productos
+            <span class="dot" style="--i: 0">.</span>
+            <span class="dot" style="--i: 1">.</span>
+            <span class="dot" style="--i: 2">.</span>
+        </p>
+        }
+    </div>

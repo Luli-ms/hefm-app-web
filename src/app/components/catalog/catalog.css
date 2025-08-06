@@ -1,0 +1,370 @@
+#catalog {
+    background-color: var(--main-bg);
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+}
+
+/* ─────────────── HEADER ─────────────── */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.title h2 {
+    text-decoration: underline wavy 2px;
+    text-underline-offset: 5px;
+    text-decoration-skip-ink: none;
+    text-decoration-color: var(--main-yellow);
+    text-align: center;
+    text-transform: capitalize;
+
+    font-size: 2em;
+
+    scroll-margin-top: 1rem;
+}
+
+.header .title:hover h2 {
+    cursor: default;
+    color: var(--main-yellow);
+    text-decoration-color: var(--main-yellow);
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 60%;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.75rem 2.75rem 0.75rem 1rem;
+    border: 2px solid var(--opacity-yellow);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-family: var(--base-font);
+    outline: none;
+    transition: all 0.3s ease, box-shadow 0.3s ease;
+
+    caret-color: var(--main-red);
+    color: var(--main-red);
+}
+
+.search-input:focus {
+    border-color: var(--main-red);
+    box-shadow: 0 2px 6px var(--main-red);
+}
+
+.search-input::placeholder {
+    color: var(--opacity-red);
+}
+
+.search-icon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--main-red);
+    pointer-events: none;
+    font-size: 1rem;
+}
+
+.filters-container {
+    display: flex;
+    gap: 1rem;
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* ─────────────── HEADER MOBILE STYLES ─────────────── */
+@media (max-width: 1500px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .input-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 584px) {
+    .filters-container {
+        flex-direction: column;
+        width: 90%;
+        gap: 0.5rem;
+    }
+}
+
+/*Título*/
+@media (max-width: 350px) {
+    .title {
+        font-size: 0.5rem;
+    }
+
+    .category-title {
+        font-size: 0.5rem;
+    }
+}
+
+
+/* ─────────────── PRODUCTS ─────────────── */
+.category-title {
+    font-size: 2rem;
+    color: var(--main-red);
+    font-family: var(--title-font);
+    margin: 2.5rem 0 1.5rem 0;
+    border-bottom: 4px solid var(--main-red);
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: center;
+    cursor: default;
+}
+
+
+/* ─────────────── PRODUCTS CARDS ─────────────── */
+
+.card-container {
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 2em;
+    padding: 1.5rem;
+    background-color: #ffffff;
+}
+
+/* ─────────────── CARDS SCROLLBAR ─────────────── */
+.card-container::-webkit-scrollbar {
+    width: 50px;
+}
+
+.card-container::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+.card-container::-webkit-scrollbar-thumb {
+    background: var(--main-yellow);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+/* ───────────────────────────────────────────── */
+
+.card {
+    scroll-snap-align: center;
+    cursor: pointer;
+
+    flex: 0 0 260px;
+    gap: 0.7rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.card:hover .product-name {
+    text-decoration-color: var(--main-yellow);
+}
+
+.card:hover .format-img {
+    box-shadow: 0 8px 15px var(--main-red);
+    background-color: var(--main-red);
+}
+
+.product-id {
+    position: absolute;
+    left: 10px;
+
+    background-color: var(--opacity-red);
+    backdrop-filter: blur(2px);
+    /* soporte en Safari */
+    -webkit-backdrop-filter: blur(2px);
+
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: monospace;
+    color: var(--main-bg);
+    border: 3px solid var(--main-bg);
+
+    transition: all 0.5s ease-in-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-um {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+
+    background-color: var(--main-red);
+
+    padding: 0.5rem;
+    border-radius: 50px;
+
+    font-weight: bolder;
+    font-size: 0.6rem;
+    color: var(--main-bg);
+
+    transition: all 0.5s ease-in-out;
+}
+
+.card:focus-within .product-um,
+.card:hover .product-um {
+    background-color: var(--main-bg);
+    color: var(--main-red);
+}
+
+.product-name {
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: var(--title-font);
+    line-height: 1.3rem;
+    color: var(--main-red);
+    margin: 0;
+    letter-spacing: 0.5px;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: none;
+    text-decoration: 2px underline;
+    text-decoration-style: wavy;
+    text-decoration-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.format-img {
+    background-color: var(--main-yellow);
+    border-radius: 100px 0 100px 0;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+}
+
+.format-text {
+    font-family: var(--base-font);
+    font-size: 0.6rem;
+    line-height: 1.2;
+    text-align: center;
+    align-self: center;
+    padding: 0 20px;
+}
+
+/*price*/
+.format-text p>span {
+    right: 60px;
+    font-size: 1rem;
+    font-weight: bolder;
+
+    border-bottom: 2px transparent;
+    border-style: wavy;
+    padding: 5px;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover .format-text p>span {
+    border-color: var(--main-red);
+}
+
+.add-cart {
+    background-color: var(--main-yellow);
+    font-weight: bolder;
+    padding: 1rem;
+    border-radius: 1px;
+    font-size: 0.8rem;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.add-cart:hover {
+    text-decoration: underline wavy 1px;
+    text-underline-offset: 4px;
+    text-decoration-skip-ink: none;
+    background-color: var(--main-red);
+    color: var(--accent-color);
+    box-shadow: 0 8px 15px var(--main-red);
+}
+
+/* Desktop: cartas sin scroll horizontal */
+@media (min-width: 1024px) {
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        overflow-x: visible;
+        scroll-snap-type: none;
+        justify-content: center;
+        gap: 2em;
+        padding: 1.5rem;
+        background-color: #fff;
+    }
+
+    .card {
+        margin-bottom: 2em;
+    }
+}
+
+/* Mobiles: cartas más pequeñas */
+@media (max-width: 1023px) {
+    .format-img {
+        width: 50%;
+        height: 100px;
+    }
+}
+
+/* ─────────────── LOADING / NOT FOUND STYLES ─────────────── */
+.loading,
+.no-results {
+    background-color: var(--opacity-red);
+    text-align: center;
+    padding: 10px;
+    color: var(--main-bg);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.loading {
+    font-weight: bold;
+}
+
+.dot {
+    opacity: 0;
+    animation: dot-flash 1.5s infinite;
+    animation-delay: calc(var(--i) * 0.3s);
+    display: inline-block;
+}
+
+@keyframes dot-flash {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

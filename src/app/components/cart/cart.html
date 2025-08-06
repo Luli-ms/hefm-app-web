@@ -1,0 +1,35 @@
+<div class="cart-container">
+    <p style="padding: 1rem;">Tu carrito<i class="fa-solid fa-cart-shopping"></i></p>
+    @if (cart().length === 0) {
+    <div class="no-prods">
+        <p>No hay productos en el carrito</p>
+        <a [routerLink]="['/']" fragment="catalog" (click)="setCategoria(null)">Empezar a comprar!</a>
+    </div>
+    } @else {
+    @for (cartItem of cart(); track cartItem.prod.id + '-' + cartItem.format.formatId) {
+    <div class="cart-item">
+        <button class="remove-btn" (click)="removeItem(cartItem.prod, cartItem.format)"><i
+                class="fa-solid fa-xmark"></i></button>
+
+        <img [src]="cartItem.format.img" alt="{{cartItem.prod.prodName}}" class="product-image"
+            [routerLink]="['/detalles', cartItem.prod.id]" [queryParams]="{formatId: cartItem.format.formatId}" />
+
+        <div class="item-info">
+            <h1 class="product-name" [routerLink]="['/detalles', cartItem.prod.id]"
+                [queryParams]="{formatId: cartItem.format.formatId}">{{ cartItem.prod.prodName }}</h1>
+            <p class="product-details">
+                {{ cartItem.format.um }} | {{ cartItem.format.format }}
+            </p>
+            <p class="product-price"> {{cartItem.format.price.lvl1 * cartItem.cantidad | currency:'EUR':'symbol' }}</p>
+
+            <div class="quantity-controls">
+                <button class="qty-btn" [disabled]="isMinusDisabled(cartItem.cantidad)"
+                    (click)="changeQty(cartItem.prod, cartItem.format, -1)">−</button>
+                <span class="qty-value">{{ cartItem.cantidad }}</span>
+                <button class="qty-btn" (click)="changeQty(cartItem.prod, cartItem.format, 1)">+</button>
+            </div>
+        </div>
+    </div>
+    }
+    }
+</div>

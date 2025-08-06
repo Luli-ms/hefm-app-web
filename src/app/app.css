@@ -1,0 +1,13 @@
+.content-padding {
+    margin-top: 3rem;
+}
+
+.footer {
+    margin-top: 1rem;
+}
+
+@media (max-width: 956px) {
+    .content-padding {
+        margin-top: 4rem;
+    }
+}
