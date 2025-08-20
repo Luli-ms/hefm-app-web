@@ -1,9 +1,10 @@
-import { Component, inject } from '@angular/core';
+import { Component, ElementRef, HostListener, inject, ViewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CategoryEnum } from '../../models/category.enum';
 import { AsyncPipe, TitleCasePipe } from '@angular/common';
 import { ProductService } from '../../services/product.service';
 import { CartService } from '../../services/cart.service';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +15,7 @@ import { CartService } from '../../services/cart.service';
 export class Header {
   productService = inject(ProductService);
   cartService = inject(CartService);
+  authService = inject(AuthService);
 
   ngAfterViewInit() {
     /*Hamburguer menu disappears if a link is clicked*/
@@ -36,5 +38,18 @@ export class Header {
 
   setCategoria(cat: string | null) {
     this.productService.setCat(cat);
+  }
+
+  // Desmarcar checkbox
+  @ViewChild('catalogToggleCheckbox') catalogToggleCheckbox!: ElementRef<HTMLInputElement>;
+  @ViewChild('submenu') submenu!: ElementRef<HTMLElement>;
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    const clickTarget = event.target as HTMLElement;
+
+    if (this.submenu && !this.submenu.nativeElement.contains(clickTarget)) {
+      this.catalogToggleCheckbox.nativeElement.checked = false;
+    }
   }
 }

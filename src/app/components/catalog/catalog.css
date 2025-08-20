@@ -22,8 +22,7 @@
     text-transform: capitalize;
 
     font-size: 2em;
-
-    scroll-margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .header .title:hover h2 {
@@ -175,11 +174,12 @@
     position: relative;
 }
 
-.card:hover .product-name {
+
+.card:hover:not(.no-disponible) .product-name {
     text-decoration-color: var(--main-yellow);
 }
 
-.card:hover .format-img {
+.card:hover:not(.no-disponible) .format-img {
     box-shadow: 0 8px 15px var(--main-red);
     background-color: var(--main-red);
 }
@@ -228,8 +228,8 @@
     transition: all 0.5s ease-in-out;
 }
 
-.card:focus-within .product-um,
-.card:hover .product-um {
+.card:focus-within:not(.no-disponible) .product-um,
+.card:hover:not(.no-disponible) .product-um {
     background-color: var(--main-bg);
     color: var(--main-red);
 }
@@ -271,20 +271,35 @@
 }
 
 /*price*/
-.format-text p>span {
+.format-text p span {
     right: 60px;
     font-size: 1rem;
     font-weight: bolder;
+    font-family: monospace;
 
-    border-bottom: 2px transparent;
-    border-style: wavy;
+    text-decoration: underline wavy 2px transparent;
+    text-decoration-skip-ink: none;
+    text-align: center;
+
     padding: 5px;
 
     transition: all 0.5s ease-in-out;
 }
 
-.card:hover .format-text p>span {
-    border-color: var(--main-red);
+.card:hover:not(.no-disponible) .format-text p>span:not(.rebajado) {
+    text-decoration-color: var(--main-yellow);
+}
+
+.rebajado {
+    color: var(--opacity-red);
+    font-size: 0.7rem !important;
+    text-decoration: line-through wavy 2px var(--main-yellow) !important;
+}
+
+.format-text .msj {
+    font-family: monospace;
+    font-size: 0.5rem;
+    font-weight: bolder;
 }
 
 .add-cart {
@@ -295,15 +310,20 @@
     font-size: 0.8rem;
     width: 100%;
     transition: all 0.3s ease-in-out;
+    text-decoration: underline wavy 2px transparent;
+    text-decoration-skip-ink: none;
 }
 
-.add-cart:hover {
-    text-decoration: underline wavy 1px;
-    text-underline-offset: 4px;
-    text-decoration-skip-ink: none;
+.card:hover:not(.no-disponible) .add-cart:hover {
+    text-decoration-color: var(--accent-color);
     background-color: var(--main-red);
     color: var(--accent-color);
     box-shadow: 0 8px 15px var(--main-red);
+}
+
+.card.no-disponible {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 /* Desktop: cartas sin scroll horizontal */

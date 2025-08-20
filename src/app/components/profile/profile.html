@@ -1,0 +1,82 @@
+@let user = userData$ | async;
+
+<div class="profile-container">
+    @if(user) {
+    <div class="profile-info">
+        <div class="header">
+            <h1>Perfil de Usuario</h1>
+        </div>
+        <form [formGroup]="form" (ngSubmit)="toggleEditMode()">
+            <div class="profile-field">
+                <h2>Nombre:</h2>
+                @if (!editMode) {
+                <span>{{ user.name }}</span>
+                } @else {
+                <input formControlName="firstname" placeholder="Nombre" />
+                <input formControlName="lastname" placeholder="Apellido" />
+                @if((firstname?.invalid || lastname?.invalid) && (firstname?.touched || lastname?.touched)){
+                <span class="validation">* Introduzca nombre y appellidos válidos</span>
+                }
+                }
+            </div>
+
+            <div class="profile-field">
+                <h2>Dirección:</h2>
+                @if (!editMode) {
+                <span>{{ user.address }}</span>
+                } @else {
+                <input formControlName="calle" placeholder="Calle" />
+                <input formControlName="numero" placeholder="Número" />
+                @if((calle?.invalid || numero?.invalid) && (calle?.touched || numero?.touched)){
+                <span class="validation">* Introduzca una calle y número válidos</span>
+                }
+                <select formControlName="municipio">
+                    <option value="" disabled>Municipio</option>
+                    @for (muni of municipios; track $index) {
+                    <option [value]="muni">{{ muni }}</option>
+                    }
+                </select>
+                }
+            </div>
+
+            <div class="profile-field">
+                <h2>Teléfono:</h2>
+                @if (!editMode) {
+                <span>+34 {{ user.phone | groupDigits }}</span>
+                } @else {
+                <input formControlName="phone" placeholder="Teléfono" />
+                @if(phone?.invalid && (phone?.touched || phone?.dirty)){
+                <span class="validation">* Introduzca un número de teléfono válido en España (9 dígitos)</span>
+                }
+                }
+            </div>
+
+            <div class="profile-field">
+                <h2>Email:</h2>
+                <span>{{ user.email }}</span>
+            </div>
+
+            <div class="btn-container">
+                @if(editMode) {
+                <button type="submit" [disabled]="form.invalid">
+                    Guardar <i class="fa fa-floppy-disk"></i>
+                </button>
+                } @else {
+                <button type="submit">
+                    Editar <i class="fa fa-pen"></i>
+                </button>
+                }
+                <button type="submit" (click)="logout()">
+                    <i class="fas fa-sign-out-alt"></i> Cerrar sesión
+                </button>
+            </div>
+        </form>
+    </div>
+    } @else {
+    <p class="loading">Cargando
+        <span class="dot" style="--i: 0">.</span>
+        <span class="dot" style="--i: 1">.</span>
+        <span class="dot" style="--i: 2">.</span>
+    </p>
+    }
+</div>

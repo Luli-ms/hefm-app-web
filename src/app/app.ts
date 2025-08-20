@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Header } from './components/header/header';
-import { RouterOutlet } from '@angular/router';
-import { Prueba } from './prueba';
+import { Router, RouterOutlet } from '@angular/router';
 import { ProductService } from './services/product.service';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { Footer } from './components/footer/footer';
 import { Order } from './components/order/order';
+import { AuthService } from './services/auth.service';
+import { doc, getDoc } from 'firebase/firestore';
+import { UserInterface } from './models/user.interface';
 
 @Component({
   selector: 'app-root',
@@ -14,11 +16,30 @@ import { Order } from './components/order/order';
   styleUrl: './app.css'
 })
 
-export class App {
-  pruebaService = inject(Prueba);
-  productService = inject(ProductService);
+export class App implements OnInit {
+  authService = inject(AuthService);
+  router = inject(Router);
 
-  constructor() {
-    this.pruebaService.testAuth()
+  ngOnInit(): void {
+    this.authService.user$.subscribe(async user => {
+      if (user) {
+        const userDocRef = doc(this.authService.db, `users/${user.uid}`);
+        const userSnap = await getDoc(userDocRef);
+
+        if (userSnap.exists()) {
+          const firestoreData = userSnap.data() as Omit<UserInterface, 'uid' | 'email' | 'name'>
+          this.authService.currUserSign.set({
+            uid: user.uid,
+            email: user.email!,
+            name: user.displayName!,
+            ...firestoreData
+          });
+        } else {
+          console.error('Documento de usuario no encontrado en Firestore');
+        }
+      } else {
+        this.authService.currUserSign.set(null);
+      }
+    })
   }
 }

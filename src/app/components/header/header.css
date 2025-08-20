@@ -10,6 +10,10 @@ a i {
     margin-right: 10px;
 }
 
+a.carrito {
+    padding-right: 40px !important;
+}
+
 /* ─────────────── NAVBAR LAYOUT ─────────────── */
 header {
     position: fixed;
@@ -25,7 +29,7 @@ header {
     justify-content: space-between;
 
     background-color: var(--opacity-yellow);
-    box-shadow: 0 8px 15px var(--main-red);
+    box-shadow: 0 2px 15px var(--opacity-red);
     backdrop-filter: blur(3px);
     /* soporte en Safari */
     -webkit-backdrop-filter: blur(2px);
@@ -55,7 +59,7 @@ header .navbar ul li a {
     font-size: 0.8rem;
     font-weight: bolder;
     transition: all 0.2s ease-in-out;
-    text-decoration: underline wavy 1px transparent;
+    text-decoration: underline wavy 2px transparent;
     text-decoration-skip-ink: none;
 }
 
@@ -78,6 +82,7 @@ header .navbar ul li a:focus-within {
     left: 6px;
 
     font-family: monospace;
+    display: inline-block;
 }
 
 /* ─────────────── HAMBURGER TOGGLE ─────────────── */
@@ -116,7 +121,12 @@ header button label i {
 /* ─────────────── SUBMENU ─────────────── */
 
 .has-submenu #catalog-toggle {
-    display: none;
+    opacity: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    position: absolute;
 }
 
 .has-submenu .submenu {
@@ -140,26 +150,56 @@ header button label i {
     transform: rotate(0deg);
 }
 
+/* Catálogo caret icon */
+a label i {
+    padding: 20px 25px;
+    border-radius: 50px;
+}
+
+header .catalog-span {
+    position: relative;
+    margin-right: 2rem;
+}
+
+header .caret-toggle {
+    position: absolute;
+    right: 10%;
+    top: 12px;
+
+    padding: 16px 20px;
+    border-radius: 50px;
+    cursor: pointer
+}
+
+header .caret-toggle i {
+    color: var(--main-red);
+    font-size: 0.7rem;
+}
+
+header .caret-toggle:hover {
+    background-color: var(--opacity-red);
+}
+
+header .caret-toggle:hover i {
+    color: var(--accent-color);
+}
+
+
+.has-submenu #catalog-toggle:checked~.submenu {
+    display: flex;
+}
+
 /* ────── DESKTOP: Submenu on hover ────── */
 @media (min-width: 957px) {
     .has-submenu .submenu {
         position: absolute;
         left: 0;
         width: 200px;
-        box-shadow: 0 8px 15px var(--main-red);
-    }
-
-    .has-submenu:hover .submenu,
-    .has-submenu:focus-within .submenu {
-        display: flex;
+        box-shadow: 0 8px 15px var(--main-yellow);
     }
 
     .has-submenu .submenu li {
         width: 100%;
-    }
-
-    .caret-toggle {
-        display: none;
     }
 }
 
@@ -204,12 +244,11 @@ header button label i {
         top: 100%;
         left: 0;
         right: 0;
-        max-height: calc(100vh - 170px);
+        max-height: calc(100vh - 150px);
         overflow-y: auto;
 
-        border-top: 2px solid var(--main-red);
         background-color: var(--main-bg);
-        box-shadow: 0 8px 15px var(--main-red);
+        box-shadow: 0 8px 15px var(--main-yellow);
     }
 
     #menu-bar:checked~.navbar {
@@ -229,32 +268,6 @@ header button label i {
     header .navbar ul li ul li {
         border-top: 1px solid var(--main-red);
         background-color: #fff2d5;
-    }
-
-    /* Catálogo caret icon */
-    a label i {
-        padding: 20px 25px;
-        background-color: var(--opacity-red);
-        border-radius: 50px;
-    }
-
-    header #catalog-span {
-        position: relative;
-    }
-
-    header .caret-toggle {
-        position: absolute;
-        right: 10%;
-        top: 15px;
-
-        padding: 15px 20px;
-        background-color: var(--opacity-red);
-        border-radius: 50px;
-    }
-
-    header .caret-toggle i {
-        color: var(--main-bg);
-        font-size: 0.7rem;
     }
 
     .has-submenu #catalog-toggle:checked~.submenu {

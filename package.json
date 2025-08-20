@@ -17,6 +17,7 @@
     "@angular/forms": "^20.0.0",
     "@angular/platform-browser": "^20.0.0",
     "@angular/router": "^20.0.0",
+    "@emailjs/browser": "^4.4.1",
     "firebase": "^11.10.0",
     "resize-observer-polyfill": "^1.5.1",
     "rxjs": "~7.8.0",

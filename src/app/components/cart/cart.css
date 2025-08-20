@@ -12,10 +12,8 @@
     position: relative;
     display: flex;
     gap: 2rem;
-    background-color: #f0f0f0aa;
+    background-color: #fff;
     padding: 2rem;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
     min-height: 450px;
 }
 
@@ -77,11 +75,28 @@
     margin-bottom: 1rem;
 }
 
+.product-price span {
+    font-size: 0.5rem;
+}
+
 .quantity-controls {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2px;
 }
+
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    appearance: textfield;
+}
+
 
 .qty-btn {
     cursor: pointer;
@@ -90,17 +105,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 32px;
-    height: 32px;
+
+    width: 50px;
+    height: 50px;
 
     text-align: center;
     font-size: 1.5rem;
     color: var(--main-red);
 
     background: transparent;
-    border-radius: 50px;
-    background-color: var(--opacity-yellow);
+    background-color: var(--accent-color);
     padding: 1rem;
+}
+
+.qty-btn.left {
+    border-radius: 20px 5px 5px 20px;
+}
+
+.qty-btn.right {
+    border-radius: 5px 20px 20px 5px;
 }
 
 .qty-btn:disabled {
@@ -111,6 +134,22 @@
 .qty-value {
     font-size: 1rem;
     text-align: center;
+    font-family: monospace;
+    color: var(--main-red);
+    outline: none;
+    outline: 1px solid var(--accent-color);
+    width: 100px;
+    height: 50px;
+
+    border: none;
+    text-decoration: underline 2px inset var(--main-red);
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+input:focus {
+
+    border: 2px solid var(--accent-color);
 }
 
 .no-prods {
@@ -125,24 +164,10 @@
     text-align: center;
 }
 
-.no-prods a {
-    text-decoration: underline wavy 1px transparent;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    color: var(--main-red);
-    background-color: var(--main-yellow);
-    box-shadow: 0 8px 15px var(--main-red);
-
-    padding: 25px;
-
-    transition: all 0.2s ease-in-out;
-}
-
-.no-prods a:hover,
-.no-prods a:focus-within {
-    text-decoration-color: var(--accent-color);
-    background-color: var(--main-red);
-    color: var(--accent-color);
+.header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
 }
 
 @media (max-width: 864px) {

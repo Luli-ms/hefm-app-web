@@ -12,11 +12,12 @@ import { getAuth } from 'firebase/auth';
 import { provideHttpClient } from '@angular/common/http';
 import { provideStorage, getStorage } from '@angular/fire/storage';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { provideFunctions } from '@angular/fire/functions';
+import { getFunctions } from 'firebase/functions';
 
 export const appConfig: ApplicationConfig = {
   providers: [
     { provide: LOCALE_ID, useValue: 'es-ES' },
-    { provide: LocationStrategy, useClass: HashLocationStrategy },
     provideRouter(
       routes,
       withComponentInputBinding(),
@@ -32,8 +33,9 @@ export const appConfig: ApplicationConfig = {
 
     provideHttpClient(),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFirestore(() => getFirestore('users-prods-db')),
+    provideFirestore(() => getFirestore('app-hefm-db')),
     provideAuth(() => getAuth()),
     provideStorage(() => getStorage()),
+    provideFunctions(() => getFunctions())
   ]
 };

@@ -5,6 +5,7 @@ type PricePerLvl = {
 }
 
 export interface FormatInterface {
+    precioFinal: number;
     format: string;
     img: string;
     price: PricePerLvl;

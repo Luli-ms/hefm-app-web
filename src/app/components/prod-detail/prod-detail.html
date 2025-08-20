@@ -5,21 +5,19 @@
 
     <div class="page-content">
         @if (producto) {
-        <!-- ID encima, estilo badge -->
         <div class="id">{{ producto.id }}</div>
 
-        <!-- Imagen del producto -->
         <div class="img-container">
             <img [src]="formato.img" [alt]="producto.prodName" />
         </div>
 
-        <!-- Información del producto y formato -->
         <div class="prod-info">
             <h1>{{ producto.prodName }}</h1>
             <p>{{ formato.desc }}</p>
 
             <div class="price">
                 {{ formato.price.lvl1 | number:'1.2-2' }} €
+                <span>* Precio sin IGIC incluido</span>
             </div>
 
             <div class="add-cart" (click)="addToCart(producto, formato)">
@@ -27,7 +25,6 @@
                 <i class="fa-solid fa-cart-shopping"></i>
             </div>
 
-            <!-- Opcional: mostrar formato y unidad -->
             <div class="dropdown-flex">
                 <div class="dropdown-container">
                     <label>Formato:</label>

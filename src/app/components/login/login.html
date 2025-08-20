@@ -1,1 +1,33 @@
-<p>login works!</p>
+<div class="form">
+    <h1>Login</h1>
+
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" [class.hidden]="isLoading()">
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Email" formControlName="email" />
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" formControlName="password" />
+        </div>
+        @if (errorMessage() ) {
+        <span class="validation">El usuario o la contraseña son incorrectos. Inténtalo de nuevo</span>
+        }
+        <div>
+            <button type="submit">Iniciar sesión</button>
+        </div>
+        <hr>
+    </form>
+    <div class="links">
+        <a routerLink="/registro">Regístrate!</a>
+
+        <a href="#">¿Has olvidado tu contraseña?</a>
+    </div>
+
+    @if(isLoading()){
+    <div class="loading">
+        <i class="fas fa-spinner fa-spin"></i>
+    </div>
+    }
+
+</div>

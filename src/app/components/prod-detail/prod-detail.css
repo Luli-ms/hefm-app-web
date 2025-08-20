@@ -76,6 +76,10 @@
     text-align: center;
 }
 
+.page-content .price span {
+    font-size: 0.5rem;
+}
+
 .page-content .dropdown-flex {
     display: flex;
     flex-direction: column;

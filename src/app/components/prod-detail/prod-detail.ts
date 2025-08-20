@@ -5,7 +5,6 @@ import { ProductService } from '../../services/product.service';
 import { ProductInterface } from '../../models/product.interface';
 import { CommonModule } from '@angular/common';
 import { FormatInterface } from '../../models/format.interface';
-import { Product } from '../product/product';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { CartService } from '../../services/cart.service';
 import { Catalog } from '../catalog/catalog';
@@ -39,16 +38,6 @@ export class ProdDetail {
     if (!producto || !formatId) return undefined;
     return producto.format.find(f => f.formatId === formatId);
   });
-
-  ngOnInit() {
-    if (!this.idSignal()) {
-      console.warn('Falta el parámetro de ruta "id" para el producto.');
-    }
-    if (!this.formatIdSignal()) {
-      console.warn('No se proporcionó formatId en query params. Se puede usar para seleccionar un formato concreto.');
-    }
-  }
-
 
   addToCart(prod: ProductInterface, format: FormatInterface) {
     this.cartService.addToCart(prod, format);

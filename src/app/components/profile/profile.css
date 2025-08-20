@@ -1,0 +1,148 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    max-width: 60vw;
+    min-height: 70vh;
+
+    margin-top: 4rem;
+    margin: 4rem auto auto;
+    padding: 1.5rem;
+
+    background: var(--main-bg);
+    box-shadow: 0 2px 10px var(--opacity-red);
+    border-radius: 1px;
+
+    font-size: 0.7rem;
+}
+
+@media (max-width: 736px) {
+    .profile-container {
+        max-width: 95vw;
+        padding: 0.5rem;
+    }
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+    text-align: center;
+}
+
+h2 {
+    cursor: default;
+}
+
+.edit-btn {
+    display: flex;
+    align-items: center;
+
+    padding: 0.5rem;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+    background: var(--opacity-yellow);
+    color: var(--main-red);
+    border: none;
+    border-radius: 50px;
+}
+
+.edit-btn:hover {
+    background: var(--main-red);
+    color: var(--accent-color);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0.5rem;
+
+    font-family: monospace;
+}
+
+
+.profile-field input {
+    padding: 0.2rem 1.2rem;
+
+    font-size: 0.7rem;
+    font-family: monospace;
+    font-weight: 600;
+
+    border: none;
+    background-color: #ffff;
+    border-bottom: 1px solid var(--main-red);
+    color: var(--main-red);
+
+    transition: all 0.1s ease-in-out;
+}
+
+.profile-field input.name {
+    width: 50%;
+    text-align: left;
+}
+
+.profile-field input.tlf {
+    width: 9ch;
+}
+
+
+.profile-field input:focus {
+    outline: none;
+    box-shadow: 0 1px 2px var(--opacity-red);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ─────────────── LOADING / NOT FOUND STYLES ─────────────── */
+.loading,
+.no-results {
+    background-color: var(--opacity-red);
+    text-align: center;
+    padding: 10px;
+    color: var(--main-bg);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.loading {
+    font-weight: bold;
+}
+
+.dot {
+    opacity: 0;
+    animation: dot-flash 1.5s infinite;
+    animation-delay: calc(var(--i) * 0.3s);
+    display: inline-block;
+}
+
+@keyframes dot-flash {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

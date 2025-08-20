@@ -3,7 +3,8 @@
 
         <div class="pedido">
             <div class="total">
-                Total: <span style="font-family: monospace;">{{orderService.total() |
+                <span class="label">Total:</span>
+                <span class="value" style="font-family: monospace;">{{orderService.totalWithIGIC |
                     currency:'EUR':'symbol':'1.2-2'}}</span>
             </div>
 
@@ -18,32 +19,12 @@
 
     </div>
 
-    <div class="continue-btn" (click)="showSum=true">
-        Envíar
-    </div>
+    <button type="submit" (click)="showSum = true">
+        Mi pedido
+    </button>
 
 </div>
-<!-- Modal resumen de pedido -->
+
 @if (showSum){
-<div class="modal-overlay" (click)="closeModal()">
-    <div class="modal" (click)="$event.stopPropagation()">
-        <button (click)="closeModal()"><i class="fa-solid fa-xmark"></i></button>
-        <h2>Pedido:</h2>
-        <ul>
-            @for (cartItem of cartService.cart(); track cartItem.prod.id) {
-            @let item = cartItem.prod;
-            @let format = cartItem.format;
-            <li>
-                <span class="product-name">
-                    <h2>{{ item.prodName }}</h2>
-                </span>
-                <span class="product-details">({{ format.um }} - {{ format.format }})</span>
-                <span class="price-info">{{ cartItem.cantidad }} x {{ format.price.lvl1 | currency:'EUR' }}</span>
-            </li>
-            }
-        </ul>
-
-        <div class="modal-total"><strong>Total:</strong> {{ orderService.total() | currency:'EUR' }}</div>
-    </div>
-</div>
+<app-order-modal (close)="showSum = false"></app-order-modal>
 }

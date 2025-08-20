@@ -5,6 +5,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 20,
         "format": [
             {
                 "format": "150g",
@@ -17,18 +18,6 @@
                     "lvl3": 2.419
                 },
                 "formatId": "1-9647c03a0a"
-            },
-            {
-                "format": "150g",
-                "um": "caja",
-                "img": "lorenz_crunchips_paprika_150.webp",
-                "desc": "Patatas fritas sabor paprika",
-                "price": {
-                    "lvl1": 2.48,
-                    "lvl2": 2.25,
-                    "lvl3": 2.419
-                },
-                "formatId": "1-c57ba4fcbf"
             }
         ]
     },
@@ -38,6 +27,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 20,
         "format": [
             {
                 "format": "150g",
@@ -50,18 +40,6 @@
                     "lvl3": 2.419
                 },
                 "formatId": "2-3190d2b364"
-            },
-            {
-                "format": "150g",
-                "um": "caja",
-                "img": "lorenz_crunchips_salted_150.webp",
-                "desc": "Patatas fritas sabor original",
-                "price": {
-                    "lvl1": 2.48,
-                    "lvl2": 2.25,
-                    "lvl3": 2.419
-                },
-                "formatId": "2-326aa72d90"
             }
         ]
     },
@@ -71,6 +49,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 20,
         "format": [
             {
                 "format": "150g",
@@ -83,18 +62,6 @@
                     "lvl3": 2.419
                 },
                 "formatId": "3-205e452cb3"
-            },
-            {
-                "format": "150g",
-                "um": "caja",
-                "img": "lorenz_crunchips_cheeseonion_130.webp",
-                "desc": "Patatas fritas sabor queso y cebolla",
-                "price": {
-                    "lvl1": 2.48,
-                    "lvl2": 2.25,
-                    "lvl3": 2.419
-                },
-                "formatId": "3-c2f62f1576"
             }
         ]
     },
@@ -104,6 +71,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 20,
         "format": [
             {
                 "format": "130g",
@@ -116,18 +84,6 @@
                     "lvl3": 2.161
                 },
                 "formatId": "4-61955bc2a9"
-            },
-            {
-                "format": "130g",
-                "um": "caja",
-                "img": "lorenz_crunchips_xcut_salted_130.webp",
-                "desc": "Patatas fritas corte X sabor original",
-                "price": {
-                    "lvl1": 2.18,
-                    "lvl2": 1.97,
-                    "lvl3": 2.161
-                },
-                "formatId": "4-c535a4a56b"
             }
         ]
     },
@@ -137,6 +93,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 20,
         "format": [
             {
                 "format": "130g",
@@ -149,18 +106,6 @@
                     "lvl3": 2.161
                 },
                 "formatId": "5-793d5d52a6"
-            },
-            {
-                "format": "130g",
-                "um": "caja",
-                "img": "lorenz_crunchips_xcut_paprika_130.webp",
-                "desc": "Patatas fritas corte X sabor queso y cebolla",
-                "price": {
-                    "lvl1": 2.18,
-                    "lvl2": 1.97,
-                    "lvl3": 2.161
-                },
-                "formatId": "5-dd4a95fa41"
             }
         ]
     },
@@ -170,6 +115,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 20,
         "format": [
             {
                 "format": "130g",
@@ -182,18 +128,6 @@
                     "lvl3": 2.175
                 },
                 "formatId": "6-74e80a44d0"
-            },
-            {
-                "format": "130g",
-                "um": "caja",
-                "img": "lorenz_crunchips_xcut_cheeseonion_130.webp",
-                "desc": "Patatas fritas corte X sabor queso y cebolla",
-                "price": {
-                    "lvl1": 2.18,
-                    "lvl2": 1.97,
-                    "lvl3": 2.175
-                },
-                "formatId": "6-dfe046cbd5"
             }
         ]
     },
@@ -203,6 +137,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 21,
         "format": [
             {
                 "format": "100g",
@@ -215,18 +150,6 @@
                     "lvl3": 1.689
                 },
                 "formatId": "7-f5bf859f5e"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_pomsticks_paprika_100.webp",
-                "desc": "Snacks de pan crujiente sabor paprika",
-                "price": {
-                    "lvl1": 1.63,
-                    "lvl2": 1.48,
-                    "lvl3": 1.689
-                },
-                "formatId": "7-8059c39ec0"
             }
         ]
     },
@@ -236,6 +159,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 21,
         "format": [
             {
                 "format": "100g",
@@ -248,18 +172,6 @@
                     "lvl3": 1.689
                 },
                 "formatId": "8-caf2d70096"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_pomsticks_salted_100.webp",
-                "desc": "Snacks de pan crujiente sabor original",
-                "price": {
-                    "lvl1": 1.63,
-                    "lvl2": 1.48,
-                    "lvl3": 1.689
-                },
-                "formatId": "8-e9b5ede0e4"
             }
         ]
     },
@@ -269,6 +181,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 21,
         "format": [
             {
                 "format": "100g",
@@ -281,18 +194,6 @@
                     "lvl3": 1.59
                 },
                 "formatId": "9-08f05e30a1"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_pomsticks_cheese_85.webp",
-                "desc": "Snacks de pan crujiente sabor queso",
-                "price": {
-                    "lvl1": 1.77,
-                    "lvl2": 1.61,
-                    "lvl3": 1.59
-                },
-                "formatId": "9-14dd682f9c"
             }
         ]
     },
@@ -302,6 +203,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 21,
         "format": [
             {
                 "format": "100g",
@@ -314,18 +216,6 @@
                     "lvl3": 1.635
                 },
                 "formatId": "10-5ae1a2ab80"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_pomsticks_hotandspicy_100.webp",
-                "desc": "Snacks de pan crujiente sabor picante",
-                "price": {
-                    "lvl1": 1.64,
-                    "lvl2": 1.48,
-                    "lvl3": 1.635
-                },
-                "formatId": "10-039dde3cde"
             }
         ]
     },
@@ -335,6 +225,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 25,
         "format": [
             {
                 "format": "75g",
@@ -347,18 +238,6 @@
                     "lvl3": 1.839
                 },
                 "formatId": "11-bde60cac73"
-            },
-            {
-                "format": "75g",
-                "um": "caja",
-                "img": "lorenz_peppies_75.webp",
-                "desc": "Snacks inflados sabor bacon",
-                "price": {
-                    "lvl1": 1.96,
-                    "lvl2": 1.77,
-                    "lvl3": 1.839
-                },
-                "formatId": "11-25c3543a5f"
             }
         ]
     },
@@ -368,6 +247,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 25,
         "format": [
             {
                 "format": "75g",
@@ -380,18 +260,6 @@
                     "lvl3": 1.65
                 },
                 "formatId": "12-6c2f20c6b1"
-            },
-            {
-                "format": "75g",
-                "um": "caja",
-                "img": "monstermunch_75.webp",
-                "desc": "Snacks de maíz inflado con formas monstruosas",
-                "price": {
-                    "lvl1": 2.18,
-                    "lvl2": 1.77,
-                    "lvl3": 1.65
-                },
-                "formatId": "12-6329932973"
             }
         ]
     },
@@ -401,6 +269,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 28,
         "format": [
             {
                 "format": "120g",
@@ -413,18 +282,6 @@
                     "lvl3": 1.774
                 },
                 "formatId": "14-1eb9b10564"
-            },
-            {
-                "format": "120g",
-                "um": "caja",
-                "img": "lorenz_curly_classic_120.webp",
-                "desc": "Snacks de cacahuete rizado clásico",
-                "price": {
-                    "lvl1": 1.78,
-                    "lvl2": 1.61,
-                    "lvl3": 1.774
-                },
-                "formatId": "14-d208026140"
             }
         ]
     },
@@ -434,6 +291,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 18,
         "format": [
             {
                 "format": "150g",
@@ -448,18 +306,6 @@
                 "formatId": "16-6fb23c7792"
             },
             {
-                "format": "150g",
-                "um": "caja",
-                "img": "lorenz_saltletts_150.webp",
-                "desc": "Galletas saladas clásicas",
-                "price": {
-                    "lvl1": 1.46,
-                    "lvl2": 1.32,
-                    "lvl3": 1.374
-                },
-                "formatId": "16-bdc7961966"
-            },
-            {
                 "format": "250g",
                 "um": "unidad",
                 "img": "lorenz_saltletts_250.webp",
@@ -470,18 +316,6 @@
                     "lvl3": 2.303
                 },
                 "formatId": "16-8252b239ab"
-            },
-            {
-                "format": "250g",
-                "um": "caja",
-                "img": "lorenz_saltletts_250.webp",
-                "desc": "Galletas saladas clásicas",
-                "price": {
-                    "lvl1": 2.58,
-                    "lvl2": 2.35,
-                    "lvl3": 2.303
-                },
-                "formatId": "16-494f05e36a"
             }
         ]
     },
@@ -491,6 +325,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "180g",
@@ -503,18 +338,6 @@
                     "lvl3": 2.379
                 },
                 "formatId": "18-836ffc0310"
-            },
-            {
-                "format": "180g",
-                "um": "caja",
-                "img": "lorenz_saltletts_cocktail_180.webp",
-                "desc": "Mezcla de snacks para cóctel",
-                "price": {
-                    "lvl1": 2.53,
-                    "lvl2": 2.29,
-                    "lvl3": 2.379
-                },
-                "formatId": "18-15a9a7b746"
             }
         ]
     },
@@ -524,6 +347,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "150g",
@@ -536,18 +360,6 @@
                     "lvl3": 1.565
                 },
                 "formatId": "19-4e9a48e218"
-            },
-            {
-                "format": "150g",
-                "um": "caja",
-                "img": "lorenz_saltletts_brezel_150.webp",
-                "desc": "Pretzels mini",
-                "price": {
-                    "lvl1": 1.76,
-                    "lvl2": 1.59,
-                    "lvl3": 1.565
-                },
-                "formatId": "19-c01fa99f44"
             }
         ]
     },
@@ -557,6 +369,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 14,
         "format": [
             {
                 "format": "125g",
@@ -569,18 +382,6 @@
                     "lvl3": 1.904
                 },
                 "formatId": "20-e2e06153b9"
-            },
-            {
-                "format": "125g",
-                "um": "caja",
-                "img": "lorenz_nic_nacs_125.webp",
-                "desc": "Snacks originales",
-                "price": {
-                    "lvl1": 1.9,
-                    "lvl2": 1.73,
-                    "lvl3": 1.904
-                },
-                "formatId": "20-3927efaa83"
             }
         ]
     },
@@ -590,6 +391,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 14,
         "format": [
             {
                 "format": "110g",
@@ -602,18 +404,6 @@
                     "lvl3": null
                 },
                 "formatId": "21-374cc05608"
-            },
-            {
-                "format": "110g",
-                "um": "caja",
-                "img": "lorenz_nic_nacs__bbq_110.webp",
-                "desc": "Snacks de cacahuete sabor barbacoa",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "21-f91276e859"
             }
         ]
     },
@@ -623,6 +413,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "100g",
@@ -635,18 +426,6 @@
                     "lvl3": 1.789
                 },
                 "formatId": "22-98029940b3"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_wasabi_peanuts_100.webp",
-                "desc": "Cacahuetes con sabor wasabi",
-                "price": {
-                    "lvl1": 1.789,
-                    "lvl2": 1.789,
-                    "lvl3": 1.789
-                },
-                "formatId": "22-a8b2efaba2"
             }
         ]
     },
@@ -656,6 +435,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 16,
         "format": [
             {
                 "format": "100g",
@@ -668,18 +448,6 @@
                     "lvl3": null
                 },
                 "formatId": "23-279295c683"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_naturals_mildpaprika_100.webp",
-                "desc": "Patatas fritas naturales sabor paprika",
-                "price": {
-                    "lvl1": 1.72,
-                    "lvl2": 1.6,
-                    "lvl3": null
-                },
-                "formatId": "23-69ee40ca3e"
             }
         ]
     },
@@ -689,6 +457,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "100g",
@@ -701,18 +470,6 @@
                     "lvl3": null
                 },
                 "formatId": "24-2789a5a86f"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_naturals_seasaltpepper_100.webp",
-                "desc": "Patatas fritas naturales con sal marina y pimienta",
-                "price": {
-                    "lvl1": 1.72,
-                    "lvl2": 1.6,
-                    "lvl3": null
-                },
-                "formatId": "24-07cdf0532e"
             }
         ]
     },
@@ -722,6 +479,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "100g",
@@ -734,18 +492,6 @@
                     "lvl3": null
                 },
                 "formatId": "25-af289926b2"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_naturals_salted_100.webp",
-                "desc": "Patatas fritas naturales con sal",
-                "price": {
-                    "lvl1": 1.72,
-                    "lvl2": 1.6,
-                    "lvl3": null
-                },
-                "formatId": "25-65e29c2b8d"
             }
         ]
     },
@@ -755,6 +501,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 16,
         "format": [
             {
                 "format": "125g",
@@ -767,18 +514,6 @@
                     "lvl3": null
                 },
                 "formatId": "26-1d302b9f90"
-            },
-            {
-                "format": "125g",
-                "um": "caja",
-                "img": "",
-                "desc": "Galletas saladas infantiles con formas de letras",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "26-dc2a337fae"
             }
         ]
     },
@@ -788,6 +523,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 25,
         "format": [
             {
                 "format": "110g",
@@ -800,18 +536,6 @@
                     "lvl3": 2.28
                 },
                 "formatId": "27-9d377a52b8"
-            },
-            {
-                "format": "110g",
-                "um": "caja",
-                "img": "lorenz_crunchips_wow_paprika_sourcream_110.webp",
-                "desc": "Patatas fritas con sabores paprika y crema agria",
-                "price": {
-                    "lvl1": 2.52,
-                    "lvl2": 2.28,
-                    "lvl3": 2.28
-                },
-                "formatId": "27-344789f21a"
             }
         ]
     },
@@ -821,6 +545,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 25,
         "format": [
             {
                 "format": "110g",
@@ -833,18 +558,6 @@
                     "lvl3": 2.28
                 },
                 "formatId": "28-25f431761f"
-            },
-            {
-                "format": "110g",
-                "um": "caja",
-                "img": "lorenz_crunchips_wow_jalapenos_110.webp",
-                "desc": "Patatas fritas con sabores jalapeño y queso crema",
-                "price": {
-                    "lvl1": 2.52,
-                    "lvl2": 2.28,
-                    "lvl3": 2.28
-                },
-                "formatId": "28-b322e71faf"
             }
         ]
     },
@@ -854,6 +567,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 25,
         "format": [
             {
                 "format": "85g",
@@ -866,18 +580,6 @@
                     "lvl3": 1.61
                 },
                 "formatId": "31-9214bc9511"
-            },
-            {
-                "format": "85g",
-                "um": "caja",
-                "img": "lorenz_pomsticks_bacon_85.webp",
-                "desc": "Snacks de pan crujiente sabor bacon",
-                "price": {
-                    "lvl1": 2.0,
-                    "lvl2": 1.61,
-                    "lvl3": 1.61
-                },
-                "formatId": "31-290fcdd8e2"
             }
         ]
     },
@@ -887,6 +589,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 28,
         "format": [
             {
                 "format": "150g",
@@ -899,18 +602,6 @@
                     "lvl3": null
                 },
                 "formatId": "32-b88e2f0146"
-            },
-            {
-                "format": "150g",
-                "um": "caja",
-                "img": "lorenz_curly_mexican.webp",
-                "desc": "Snacks de cacahuete rizado clásico",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "32-771ec3adc2"
             }
         ]
     },
@@ -920,6 +611,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 20,
         "format": [
             {
                 "format": "85g",
@@ -932,18 +624,6 @@
                     "lvl3": null
                 },
                 "formatId": "33-edf6a31bee"
-            },
-            {
-                "format": "85g",
-                "um": "caja",
-                "img": "lorenz_pomsticks_saltvinegar_85.webp",
-                "desc": "Snacks de pan crujiente sabor sal y vingare",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "33-4d96c4214f"
             }
         ]
     },
@@ -953,6 +633,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "100g",
@@ -965,18 +646,6 @@
                     "lvl3": null
                 },
                 "formatId": "38-efe0936ffd"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_crunchips_roasted_smokey_paprika.webp",
-                "desc": "Patatas fritas asadas sabor paprika ahumada",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "38-a48f1222c8"
             }
         ]
     },
@@ -986,6 +655,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "100g",
@@ -998,18 +668,6 @@
                     "lvl3": null
                 },
                 "formatId": "39-91bbaccc65"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_crunchips_roasted_spare_ribs.webp",
-                "desc": "Patatas fritas asadas sabor costillas",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "39-61a488288f"
             }
         ]
     },
@@ -1019,6 +677,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "lorenz",
+        "uds_caja": 15,
         "format": [
             {
                 "format": "100g",
@@ -1031,18 +690,6 @@
                     "lvl3": null
                 },
                 "formatId": "40-7d832f2055"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "lorenz_crunchips_roasted_bbq.webp",
-                "desc": "Patatas fritas asadas sabor salsa barbacoa",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "40-81b03c2680"
             }
         ]
     },
@@ -1052,6 +699,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "krisprolls",
+        "uds_caja": 16,
         "format": [
             {
                 "format": "225g",
@@ -1064,18 +712,6 @@
                     "lvl3": 2.68
                 },
                 "formatId": "50-672f422697"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "krisprolls_golden_wheat_225.webp",
-                "desc": "Pan crujiente dorado natural",
-                "price": {
-                    "lvl1": 2.95,
-                    "lvl2": 2.68,
-                    "lvl3": 2.68
-                },
-                "formatId": "50-d99dd756d7"
             }
         ]
     },
@@ -1085,6 +721,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "krisprolls",
+        "uds_caja": 5,
         "format": [
             {
                 "format": "225g",
@@ -1097,18 +734,6 @@
                     "lvl3": 2.47
                 },
                 "formatId": "51-027186eab5"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "krisprolls_wholegrain_225.webp",
-                "desc": "Pan crujiente integral",
-                "price": {
-                    "lvl1": 2.72,
-                    "lvl2": 2.47,
-                    "lvl3": 2.47
-                },
-                "formatId": "51-55ca07671f"
             }
         ]
     },
@@ -1118,6 +743,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "krisprolls",
+        "uds_caja": 5,
         "format": [
             {
                 "format": "225g",
@@ -1130,18 +756,6 @@
                     "lvl3": 2.53
                 },
                 "formatId": "52-a717b6c85c"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "krisprolls_wholegrain_nosugar_225.webp",
-                "desc": "Pan crujiente natural sin azúcar añadido",
-                "price": {
-                    "lvl1": 2.79,
-                    "lvl2": 2.53,
-                    "lvl3": 2.53
-                },
-                "formatId": "52-cba59266c5"
             }
         ]
     },
@@ -1151,6 +765,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "krisprolls",
+        "uds_caja": 5,
         "format": [
             {
                 "format": "225g",
@@ -1163,18 +778,6 @@
                     "lvl3": null
                 },
                 "formatId": "53-df0a109c4d"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "krisprolls_cereals_fiber_225.webp",
-                "desc": "Pan crujiente con cereales y fibra añadida",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "53-26cbef94da"
             }
         ]
     },
@@ -1184,6 +787,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "krisprolls",
+        "uds_caja": 5,
         "format": [
             {
                 "format": "225g",
@@ -1196,18 +800,6 @@
                     "lvl3": null
                 },
                 "formatId": "54-c9074362fa"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "krisprolls_brioches_225.webp",
-                "desc": "Pan crujiente estilo brioche",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "54-67595d434d"
             }
         ]
     },
@@ -1217,6 +809,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "finn crisp",
+        "uds_caja": 5,
         "format": [
             {
                 "format": "175g",
@@ -1229,18 +822,6 @@
                     "lvl3": null
                 },
                 "formatId": "55-ab14adc323"
-            },
-            {
-                "format": "175g",
-                "um": "caja",
-                "img": "finn_crisp_thin_original_200.webp",
-                "desc": "Pan crujiente integral original",
-                "price": {
-                    "lvl1": 2.38,
-                    "lvl2": 2.15,
-                    "lvl3": null
-                },
-                "formatId": "55-856cfc5d69"
             }
         ]
     },
@@ -1250,6 +831,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "finn crisp",
+        "uds_caja": 5,
         "format": [
             {
                 "format": "175g",
@@ -1262,18 +844,6 @@
                     "lvl3": null
                 },
                 "formatId": "56-d03db2f9d5"
-            },
-            {
-                "format": "175g",
-                "um": "caja",
-                "img": "finn_crisp_thin_multigrain_175.webp",
-                "desc": "Pan crujiente con múltiples cereales",
-                "price": {
-                    "lvl1": 2.38,
-                    "lvl2": 2.15,
-                    "lvl3": null
-                },
-                "formatId": "56-6791ec3e98"
             }
         ]
     },
@@ -1283,6 +853,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "finn crisp",
+        "uds_caja": 5,
         "format": [
             {
                 "format": "200g",
@@ -1295,18 +866,6 @@
                     "lvl3": null
                 },
                 "formatId": "57-67cbfc38a4"
-            },
-            {
-                "format": "200g",
-                "um": "caja",
-                "img": "finn_crisp_hi-fibre_200.webp",
-                "desc": "Pan crujiente alto en fibra",
-                "price": {
-                    "lvl1": 2.38,
-                    "lvl2": 2.15,
-                    "lvl3": null
-                },
-                "formatId": "57-835ecbdff7"
             }
         ]
     },
@@ -1316,6 +875,7 @@
         "igic": "alimentos",
         "category": "panadería",
         "brand": "finn crisp",
+        "uds_caja": 9,
         "format": [
             {
                 "format": "200g",
@@ -1328,117 +888,6 @@
                     "lvl3": null
                 },
                 "formatId": "58-4bf277079f"
-            },
-            {
-                "format": "200g",
-                "um": "caja",
-                "img": "finn_crisp_thin_traditional_200.webp",
-                "desc": "Pan crujiente tradicional",
-                "price": {
-                    "lvl1": 2.38,
-                    "lvl2": 2.15,
-                    "lvl3": null
-                },
-                "formatId": "58-67a74c859b"
-            }
-        ]
-    },
-    {
-        "id": "59",
-        "prodName": "Finn Crisp Thin Organic",
-        "igic": "alimentos",
-        "category": "panadería",
-        "brand": "finn crisp",
-        "format": [
-            {
-                "format": "200g",
-                "um": "unidad",
-                "img": "",
-                "desc": "Pan crujiente fino orgánico",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "59-f9682e3718"
-            },
-            {
-                "format": "200g",
-                "um": "caja",
-                "img": "",
-                "desc": "Pan crujiente fino orgánico",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "59-dfde7357f0"
-            }
-        ]
-    },
-    {
-        "id": "60",
-        "prodName": "Finn Crisp Plus Rye Snacks Garlic & Hierbas",
-        "igic": "alimentos",
-        "category": "panadería",
-        "brand": "finn crisp",
-        "format": [
-            {
-                "format": "130g",
-                "um": "unidad",
-                "img": "",
-                "desc": "Snacks de centeno con ajo y hierbas",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "60-be2ec1ecaf"
-            },
-            {
-                "format": "130g",
-                "um": "caja",
-                "img": "",
-                "desc": "Snacks de centeno con ajo y hierbas",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "60-2c792a8b3d"
-            }
-        ]
-    },
-    {
-        "id": "61",
-        "prodName": "Finn Crisp Plus Rye Snacks Seed & Salt",
-        "igic": "alimentos",
-        "category": "panadería",
-        "brand": "finn crisp",
-        "format": [
-            {
-                "format": "130g",
-                "um": "unidad",
-                "img": "",
-                "desc": "Snacks de centeno con semillas y sal",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "61-ca7b4c2e5d"
-            },
-            {
-                "format": "130g",
-                "um": "caja",
-                "img": "",
-                "desc": "Snacks de centeno con semillas y sal",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "61-304627958d"
             }
         ]
     },
@@ -1448,6 +897,7 @@
         "igic": "alimentos",
         "category": "dulces",
         "brand": "kambly",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "100g",
@@ -1460,18 +910,6 @@
                     "lvl3": 2.57
                 },
                 "formatId": "62-e37ce00711"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "kambly_butterfly_100.webp",
-                "desc": "Galletas suizas estilo mariposa",
-                "price": {
-                    "lvl1": 2.98,
-                    "lvl2": 2.57,
-                    "lvl3": 2.57
-                },
-                "formatId": "62-d7f35727d4"
             }
         ]
     },
@@ -1481,6 +919,7 @@
         "igic": "alimentos",
         "category": "dulces",
         "brand": "kambly",
+        "uds_caja": 8,
         "format": [
             {
                 "format": "100g",
@@ -1493,18 +932,6 @@
                     "lvl3": 5.67
                 },
                 "formatId": "63-77b9f25c4f"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "kambly_primavera_175.webp",
-                "desc": "Selección premium de galletas suizas",
-                "price": {
-                    "lvl1": 6.55,
-                    "lvl2": 5.67,
-                    "lvl3": 5.67
-                },
-                "formatId": "63-e65d66b54f"
             }
         ]
     },
@@ -1514,6 +941,7 @@
         "igic": "alimentos",
         "category": "dulces",
         "brand": "kambly",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "100g",
@@ -1526,18 +954,6 @@
                     "lvl3": 2.61
                 },
                 "formatId": "64-9e6466098e"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "kambly_orange_intense_100.webp",
-                "desc": "Galletas con intenso sabor a naranja",
-                "price": {
-                    "lvl1": 3.02,
-                    "lvl2": 2.61,
-                    "lvl3": 2.61
-                },
-                "formatId": "64-c5f513b29b"
             }
         ]
     },
@@ -1547,6 +963,7 @@
         "igic": "alimentos",
         "category": "dulces",
         "brand": "kambly",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "100g",
@@ -1559,18 +976,6 @@
                     "lvl3": 2.57
                 },
                 "formatId": "65-8b696af5dc"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "kambly_eclats_croquants_pistaches_80.webp",
-                "desc": "Galletas con trozos de pistacho",
-                "price": {
-                    "lvl1": 3.02,
-                    "lvl2": 2.57,
-                    "lvl3": 2.57
-                },
-                "formatId": "65-dcd0e41a3f"
             }
         ]
     },
@@ -1580,6 +985,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "jacobs",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "250g",
@@ -1592,18 +998,6 @@
                     "lvl3": 5.34
                 },
                 "formatId": "66-e77887f140"
-            },
-            {
-                "format": "250g",
-                "um": "caja",
-                "img": "jacobs_kronung_cafe_250.webp",
-                "desc": "Café molido premium",
-                "price": {
-                    "lvl1": 5.98,
-                    "lvl2": 5.34,
-                    "lvl3": 5.34
-                },
-                "formatId": "66-d2d28ad298"
             }
         ]
     },
@@ -1613,6 +1007,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "jacobs",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "100g",
@@ -1625,18 +1020,6 @@
                     "lvl3": 7.76
                 },
                 "formatId": "68-cb1955399f"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "jacobs_kronung_soluble_100.webp",
-                "desc": "Café soluble premium",
-                "price": {
-                    "lvl1": 8.8,
-                    "lvl2": 7.76,
-                    "lvl3": 7.76
-                },
-                "formatId": "68-53ce3c659a"
             }
         ]
     },
@@ -1646,6 +1029,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "jacobs",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "48g",
@@ -1658,18 +1042,6 @@
                     "lvl3": null
                 },
                 "formatId": "69-9b74f04cb7"
-            },
-            {
-                "format": "48g",
-                "um": "caja",
-                "img": "jacobs_monarch_soluble_48.webp",
-                "desc": "Café soluble clásico",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "69-b4f70f8d5a"
             }
         ]
     },
@@ -1679,6 +1051,7 @@
         "igic": "dulces",
         "category": "dulces",
         "brand": "daim",
+        "uds_caja": 12,
         "format": [
             {
                 "format": "200g",
@@ -1693,18 +1066,6 @@
                 "formatId": "70-ba320fe214"
             },
             {
-                "format": "200g",
-                "um": "caja",
-                "img": "daim_200.webp",
-                "desc": "Caramelos mini de chocolate y almendra crujiente",
-                "price": {
-                    "lvl1": 4.49,
-                    "lvl2": 3.71,
-                    "lvl3": 3.71
-                },
-                "formatId": "70-687729080a"
-            },
-            {
                 "format": "56g",
                 "um": "unidad",
                 "img": "daim_56.webp",
@@ -1717,18 +1078,6 @@
                 "formatId": "70-fd48152d35"
             },
             {
-                "format": "56g",
-                "um": "caja",
-                "img": "daim_56.webp",
-                "desc": "Caramelos mini de chocolate y almendra crujiente",
-                "price": {
-                    "lvl1": 1.1,
-                    "lvl2": 1.02,
-                    "lvl3": 1.058
-                },
-                "formatId": "70-d47565b3d2"
-            },
-            {
                 "format": "28g",
                 "um": "unidad",
                 "img": "daim_28.webp",
@@ -1739,18 +1088,6 @@
                     "lvl3": 0.514
                 },
                 "formatId": "70-7ba928dc26"
-            },
-            {
-                "format": "28g",
-                "um": "caja",
-                "img": "daim_28.webp",
-                "desc": "Caramelos mini de chocolate y almendra crujiente",
-                "price": {
-                    "lvl1": 0.59,
-                    "lvl2": 0.55,
-                    "lvl3": 0.514
-                },
-                "formatId": "70-4b32e2ed31"
             }
         ]
     },
@@ -1760,6 +1097,7 @@
         "igic": "bebidas",
         "category": "bebidas",
         "brand": "igardi",
+        "uds_caja": 8,
         "format": [
             {
                 "format": "1.5L",
@@ -1772,18 +1110,6 @@
                     "lvl3": null
                 },
                 "formatId": "79-eedad917fd"
-            },
-            {
-                "format": "1.5L",
-                "um": "caja",
-                "img": "igardi_sangria_1l.webp",
-                "desc": "Sangria con 7% de alcohol",
-                "price": {
-                    "lvl1": 4.78,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "79-9d703e285a"
             }
         ]
     },
@@ -1793,6 +1119,7 @@
         "igic": "bebidas",
         "category": "bebidas",
         "brand": "igardi",
+        "uds_caja": 8,
         "format": [
             {
                 "format": "1L",
@@ -1805,18 +1132,6 @@
                     "lvl3": null
                 },
                 "formatId": "80-4a8a70e782"
-            },
-            {
-                "format": "1L",
-                "um": "caja",
-                "img": "igardi_sangria_pet_1l.webp",
-                "desc": "Sangria en envase PET con 7% de alcohol",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "80-3005e644bd"
             }
         ]
     },
@@ -1826,6 +1141,7 @@
         "igic": "bebidas",
         "category": "bebidas",
         "brand": "rodnik's",
+        "uds_caja": 8,
         "format": [
             {
                 "format": "70cl",
@@ -1838,18 +1154,6 @@
                     "lvl3": null
                 },
                 "formatId": "81-303156bdca"
-            },
-            {
-                "format": "70cl",
-                "um": "caja",
-                "img": "rodnik_absinthe_70.webp",
-                "desc": "Absenta con 70% de alcohol",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "81-5e2e8efd7d"
             }
         ]
     },
@@ -1859,6 +1163,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "bornier",
+        "uds_caja": 24,
         "format": [
             {
                 "format": "150g",
@@ -1873,18 +1178,6 @@
                 "formatId": "89-eaa56bb52d"
             },
             {
-                "format": "150g",
-                "um": "caja",
-                "img": "bornier_mostaza_dijon_150.webp",
-                "desc": "Mostaza estilo Dijon",
-                "price": {
-                    "lvl1": 3.19,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "89-ea2967fbe3"
-            },
-            {
                 "format": "210g",
                 "um": "unidad",
                 "img": "bornier_mostaza_dijon_210.webp",
@@ -1895,18 +1188,6 @@
                     "lvl3": null
                 },
                 "formatId": "89-49cf365ca9"
-            },
-            {
-                "format": "210g",
-                "um": "caja",
-                "img": "bornier_mostaza_dijon_210.webp",
-                "desc": "Mostaza estilo Dijon",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "89-e0454c8797"
             }
         ]
     },
@@ -1916,6 +1197,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "bornier",
+        "uds_caja": 6,
         "format": [
             {
                 "format": "150g",
@@ -1930,18 +1212,6 @@
                 "formatId": "90-001e9bc9f4"
             },
             {
-                "format": "150g",
-                "um": "caja",
-                "img": "bornier_mostaza_antigua_150.webp",
-                "desc": "Mostaza estilo tradicional con grano entero",
-                "price": {
-                    "lvl1": 4.15,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "90-5ce5586508"
-            },
-            {
                 "format": "210g",
                 "um": "unidad",
                 "img": "bornier_mostaza_antigua_210.webp",
@@ -1952,18 +1222,6 @@
                     "lvl3": null
                 },
                 "formatId": "90-9bf3eae155"
-            },
-            {
-                "format": "210g",
-                "um": "caja",
-                "img": "bornier_mostaza_antigua_210.webp",
-                "desc": "Mostaza estilo tradicional con grano entero",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "90-c9ffb590b8"
             }
         ]
     },
@@ -1973,6 +1231,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "ranchera",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "200g",
@@ -1985,18 +1244,6 @@
                     "lvl3": null
                 },
                 "formatId": "99-131ab31769"
-            },
-            {
-                "format": "200g",
-                "um": "caja",
-                "img": "ranchera_totopos_1kg.webp",
-                "desc": "Totopos estilo mexicano con sal",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "99-0dc2af349a"
             }
         ]
     },
@@ -2006,6 +1253,7 @@
         "igic": "alimentos",
         "category": "snacks salados",
         "brand": "fonzies",
+        "uds_caja": 14,
         "format": [
             {
                 "format": "100g",
@@ -2018,18 +1266,6 @@
                     "lvl3": null
                 },
                 "formatId": "100-b1255cddc2"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "fonzies_100.webp",
-                "desc": "Snacks de maíz sabor queso",
-                "price": {
-                    "lvl1": 1.83,
-                    "lvl2": 1.61,
-                    "lvl3": null
-                },
-                "formatId": "100-b9e2a45e55"
             }
         ]
     },
@@ -2039,6 +1275,7 @@
         "igic": "alimentos",
         "category": "comida asiática",
         "brand": "nissin",
+        "uds_caja": 8,
         "format": [
             {
                 "format": "63g",
@@ -2051,18 +1288,6 @@
                     "lvl3": null
                 },
                 "formatId": "108-751286d29a"
-            },
-            {
-                "format": "63g",
-                "um": "caja",
-                "img": "nissin_soba_tasty_chicken_63.webp",
-                "desc": "Sopa instantánea de pollo en vaso",
-                "price": {
-                    "lvl1": 1.89,
-                    "lvl2": 1.71,
-                    "lvl3": null
-                },
-                "formatId": "108-9ee6047db3"
             }
         ]
     },
@@ -2072,6 +1297,7 @@
         "igic": "alimentos",
         "category": "comida asiática",
         "brand": "nissin",
+        "uds_caja": 8,
         "format": [
             {
                 "format": "90g",
@@ -2084,18 +1310,6 @@
                     "lvl3": null
                 },
                 "formatId": "109-7fc0cc06d8"
-            },
-            {
-                "format": "90g",
-                "um": "caja",
-                "img": "nissin_soba_classic_90.webp",
-                "desc": "Fideos soba instantáneos clásicos en vaso",
-                "price": {
-                    "lvl1": 2.08,
-                    "lvl2": 1.99,
-                    "lvl3": null
-                },
-                "formatId": "109-7d49e11943"
             }
         ]
     },
@@ -2105,6 +1319,7 @@
         "igic": "alimentos",
         "category": "comida asiática",
         "brand": "nissin",
+        "uds_caja": 8,
         "format": [
             {
                 "format": "90g",
@@ -2117,18 +1332,6 @@
                     "lvl3": null
                 },
                 "formatId": "110-7873b6b1b4"
-            },
-            {
-                "format": "90g",
-                "um": "caja",
-                "img": "nissin_soba_teriyaki_90.webp",
-                "desc": "Fideos soba instantáneos sabor teriyaki en vaso",
-                "price": {
-                    "lvl1": 2.2,
-                    "lvl2": 1.99,
-                    "lvl3": null
-                },
-                "formatId": "110-b4ad142d0c"
             }
         ]
     },
@@ -2138,6 +1341,7 @@
         "igic": "alimentos",
         "category": "comida asiática",
         "brand": "nissin",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "100g",
@@ -2150,18 +1354,6 @@
                     "lvl3": null
                 },
                 "formatId": "111-e2d2f6930f"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "nissin_damae_chicken_100.webp",
-                "desc": "Fideos ramen instantáneos sabor pollo",
-                "price": {
-                    "lvl1": 1.19,
-                    "lvl2": 1.08,
-                    "lvl3": null
-                },
-                "formatId": "111-5fced0b19b"
             }
         ]
     },
@@ -2171,6 +1363,7 @@
         "igic": "alimentos",
         "category": "comida asiática",
         "brand": "nissin",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "100g",
@@ -2183,18 +1376,6 @@
                     "lvl3": null
                 },
                 "formatId": "112-7d1de8c0dc"
-            },
-            {
-                "format": "100g",
-                "um": "caja",
-                "img": "nissin_damae_beef_100.webp",
-                "desc": "Fideos ramen instantáneos sabor carne",
-                "price": {
-                    "lvl1": 1.19,
-                    "lvl2": 1.08,
-                    "lvl3": null
-                },
-                "formatId": "112-ab5221b8f0"
             }
         ]
     },
@@ -2204,6 +1385,7 @@
         "igic": "alimentos",
         "category": "comida asiática",
         "brand": "nissin",
+        "uds_caja": 9,
         "format": [
             {
                 "format": "109g",
@@ -2216,18 +1398,6 @@
                     "lvl3": null
                 },
                 "formatId": "113-14ba092e8c"
-            },
-            {
-                "format": "109g",
-                "um": "caja",
-                "img": "nissin_soba_bag_classic_109.webp",
-                "desc": "Fideos soba instantáneos clásicos",
-                "price": {
-                    "lvl1": 1.44,
-                    "lvl2": 1.3,
-                    "lvl3": null
-                },
-                "formatId": "113-70faa49632"
             }
         ]
     },
@@ -2237,6 +1407,7 @@
         "igic": "alimentos",
         "category": "comida asiática",
         "brand": "nissin",
+        "uds_caja": 9,
         "format": [
             {
                 "format": "110g",
@@ -2249,18 +1420,6 @@
                     "lvl3": null
                 },
                 "formatId": "114-9b594d5f04"
-            },
-            {
-                "format": "110g",
-                "um": "caja",
-                "img": "nissin_soba_bag_teriyaki_110.webp",
-                "desc": "Fideos soba instantáneos sabor teriyaki",
-                "price": {
-                    "lvl1": 1.44,
-                    "lvl2": 1.3,
-                    "lvl3": null
-                },
-                "formatId": "114-c00f851059"
             }
         ]
     },
@@ -2270,6 +1429,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "muhlhauser",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "225g",
@@ -2282,18 +1442,6 @@
                     "lvl3": null
                 },
                 "formatId": "115-92098ac580"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "muhlhauser_ciruela_225.webp",
-                "desc": "Mermelada de ciruela original",
-                "price": {
-                    "lvl1": null,
-                    "lvl2": null,
-                    "lvl3": null
-                },
-                "formatId": "115-9cced8978d"
             }
         ]
     },
@@ -2303,6 +1451,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "muhlhauser",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "225g",
@@ -2315,18 +1464,6 @@
                     "lvl3": null
                 },
                 "formatId": "116-0936e0558a"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "muhlhauser_aprikose_225.webp",
-                "desc": "Confitura de albaricoque",
-                "price": {
-                    "lvl1": 2.46,
-                    "lvl2": 2.24,
-                    "lvl3": null
-                },
-                "formatId": "116-9389ce8028"
             }
         ]
     },
@@ -2336,6 +1473,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "muhlhauser",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "225g",
@@ -2348,18 +1486,6 @@
                     "lvl3": null
                 },
                 "formatId": "117-271c384009"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "muhlhauser_cereza_225.webp",
-                "desc": "Confitura de cereza",
-                "price": {
-                    "lvl1": 2.34,
-                    "lvl2": 2.13,
-                    "lvl3": null
-                },
-                "formatId": "117-825f5b0979"
             }
         ]
     },
@@ -2369,6 +1495,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "muhlhauser",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "225g",
@@ -2381,18 +1508,6 @@
                     "lvl3": null
                 },
                 "formatId": "118-0f83b1d997"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "muhlhauser_frambuesa_225.webp",
-                "desc": "Confitura de frambuesa",
-                "price": {
-                    "lvl1": 2.82,
-                    "lvl2": 2.56,
-                    "lvl3": null
-                },
-                "formatId": "118-bf066304cb"
             }
         ]
     },
@@ -2402,6 +1517,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "muhlhauser",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "225g",
@@ -2414,18 +1530,6 @@
                     "lvl3": null
                 },
                 "formatId": "119-adea92393c"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "muhlhauser_fresa_225.webp",
-                "desc": "Confitura de fresa",
-                "price": {
-                    "lvl1": 2.29,
-                    "lvl2": 2.09,
-                    "lvl3": null
-                },
-                "formatId": "119-ab58a2c277"
             }
         ]
     },
@@ -2435,6 +1539,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "muhlhauser",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "225g",
@@ -2447,18 +1552,6 @@
                     "lvl3": null
                 },
                 "formatId": "120-ce083f05a1"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "muhlhauser_frutos_225.webp",
-                "desc": "Confitura mixta de frutos del bosque",
-                "price": {
-                    "lvl1": 2.63,
-                    "lvl2": 2.39,
-                    "lvl3": null
-                },
-                "formatId": "120-89be96fcf7"
             }
         ]
     },
@@ -2468,6 +1561,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "muhlhauser",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "225g",
@@ -2480,18 +1574,6 @@
                     "lvl3": null
                 },
                 "formatId": "121-b82cb87022"
-            },
-            {
-                "format": "225g",
-                "um": "caja",
-                "img": "muhlhauser_naranja_225.webp",
-                "desc": "Confitura de naranja",
-                "price": {
-                    "lvl1": 2.04,
-                    "lvl2": 1.86,
-                    "lvl3": null
-                },
-                "formatId": "121-d249dd92df"
             }
         ]
     },
@@ -2501,6 +1583,7 @@
         "igic": "alimentos",
         "category": "conservas",
         "brand": "muhlhauser",
+        "uds_caja": 10,
         "format": [
             {
                 "format": "225g",
@@ -2513,18 +1596,94 @@
                     "lvl3": null
                 },
                 "formatId": "122-322270dc18"
-            },
+            }
+        ]
+    },
+    {
+        "id": "130",
+        "prodName": "Vicks Caramelo Miel",
+        "igic": "alimentos",
+        "category": "dulces",
+        "brand": "vicks",
+        "uds_caja": 20,
+        "format": [
             {
-                "format": "225g",
-                "um": "caja",
-                "img": "muhlhauser_heidelbeere_225.webp",
-                "desc": "Confitura de arándano",
+                "format": "72g",
+                "um": "unidad",
+                "img": "vicks_caramelo_miel_72.webp",
+                "desc": "Refrescante caramelo Vicks sabor miel",
                 "price": {
-                    "lvl1": 2.93,
-                    "lvl2": 2.64,
+                    "lvl1": 2.41,
+                    "lvl2": 1.91,
                     "lvl3": null
                 },
-                "formatId": "122-e8e780b1d6"
+                "formatId": "130-9f2c81b3a7"
+            }
+        ]
+    },
+    {
+        "id": "131",
+        "prodName": "Vicks Caramelo Vapomentol",
+        "igic": "alimentos",
+        "category": "dulces",
+        "brand": "vicks",
+        "uds_caja": 20,
+        "format": [
+            {
+                "format": "72g",
+                "um": "unidad",
+                "img": "vicks_caramelo_vapomentol_72.webp",
+                "desc": "Refrescante caramelo Vicks sabor vapomentol",
+                "price": {
+                    "lvl1": 2.41,
+                    "lvl2": 1.91,
+                    "lvl3": null
+                },
+                "formatId": "131-4d7a29ce14"
+            }
+        ]
+    },
+    {
+        "id": "132",
+        "prodName": "Vicks Caramelo Limón",
+        "igic": "alimentos",
+        "category": "dulces",
+        "brand": "vicks",
+        "uds_caja": 20,
+        "format": [
+            {
+                "format": "72g",
+                "um": "unidad",
+                "img": "vicks_caramelo_limon_72.webp",
+                "desc": "Refrescante Caramelo Vicks sabor limón",
+                "price": {
+                    "lvl1": 2.41,
+                    "lvl2": 1.91,
+                    "lvl3": null
+                },
+                "formatId": "132-bc83f77d52"
+            }
+        ]
+    },
+    {
+        "id": "133",
+        "prodName": "Vicks Caramelo IceTea Melocotón",
+        "igic": "alimentos",
+        "category": "dulces",
+        "brand": "vicks",
+        "uds_caja": 20,
+        "format": [
+            {
+                "format": "72g",
+                "um": "unidad",
+                "img": "vicks_caramelo_ice_tea_peach_72.webp",
+                "desc": "Refrescante Caramelo Vicks sabor a té helado de melocotón",
+                "price": {
+                    "lvl1": 2.41,
+                    "lvl2": 1.91,
+                    "lvl3": null
+                },
+                "formatId": "133-6e1d9a84c9"
             }
         ]
     }

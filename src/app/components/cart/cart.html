@@ -1,9 +1,16 @@
 <div class="cart-container">
-    <p style="padding: 1rem;">Tu carrito<i class="fa-solid fa-cart-shopping"></i></p>
+    <div class="header">
+        <p style="padding: 1rem; cursor: default;"><i class="fa-solid fa-cart-shopping"></i> Mi carrito:</p>
+
+        <button type="submit" (click)="showSum = true">
+            VER PEDIDO
+        </button>
+    </div>
     @if (cart().length === 0) {
     <div class="no-prods">
         <p>No hay productos en el carrito</p>
-        <a [routerLink]="['/']" fragment="catalog" (click)="setCategoria(null)">Empezar a comprar!</a>
+        <button type="submit" [routerLink]="['/']" fragment="catalog" (click)="setCategoria(null)">Empezar a
+            comprar!</button>
     </div>
     } @else {
     @for (cartItem of cart(); track cartItem.prod.id + '-' + cartItem.format.formatId) {
@@ -20,16 +27,25 @@
             <p class="product-details">
                 {{ cartItem.format.um }} | {{ cartItem.format.format }}
             </p>
-            <p class="product-price"> {{cartItem.format.price.lvl1 * cartItem.cantidad | currency:'EUR':'symbol' }}</p>
+            <div class="product-price">
+                <p> {{cartItem.format.precioFinal | currency:'EUR':'symbol' }}</p>
+                <span>* Precio por ud. sin IGIC incluido</span>
+            </div>
 
             <div class="quantity-controls">
-                <button class="qty-btn" [disabled]="isMinusDisabled(cartItem.cantidad)"
-                    (click)="changeQty(cartItem.prod, cartItem.format, -1)">−</button>
-                <span class="qty-value">{{ cartItem.cantidad }}</span>
-                <button class="qty-btn" (click)="changeQty(cartItem.prod, cartItem.format, 1)">+</button>
+                <button class="qty-btn left" [disabled]="isMinusDisabled(cartItem.cantidad)"
+                    (click)="changeQty(cartItem.format, -1)"><span>-</span></button>
+                <input type="number" name="cantidad" class="qty-value" [(ngModel)]="cartItem.cantidad"
+                    (blur)="updateQty(cartItem.format, cartItem.prod, $event)"
+                    (keyup.enter)="updateQty(cartItem.format,cartItem.prod, $event)" [min]="1" />
+
+                <button class="qty-btn right" (click)="changeQty(cartItem.format, 1)"><span>+</span></button>
             </div>
         </div>
     </div>
     }
     }
 </div>
+@if (showSum){
+<app-order-modal (close)="showSum = false"></app-order-modal>
+}

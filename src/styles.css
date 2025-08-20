@@ -101,6 +101,7 @@ select {
     background-repeat: no-repeat;
     background-position: right 0.5rem center;
     background-size: 1rem;
+    width: 100%;
 }
 
 select:hover {
@@ -121,4 +122,42 @@ select option {
     font-family: monospace;
     font-weight: bold;
     background-color: var(--main-bg);
+}
+
+button[type="submit"] {
+    background-color: var(--main-yellow);
+
+    color: var(--main-red);
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--base-font);
+
+    text-decoration: underline wavy 2px transparent;
+    text-underline-offset: 2px;
+
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:enabled:hover,
+button[type="submit"]:enabled:focus-within {
+    background-color: var(--main-red);
+    color: var(--accent-color);
+    text-decoration-color: var(--accent-color);
+    transform: translateY(2px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:disabled {
+    background-color: var(--opacity-yellow);
+    cursor: not-allowed
 }

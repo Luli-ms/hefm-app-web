@@ -18,12 +18,12 @@
 
     <nav class="navbar">
         <ul>
-            <li class="has-submenu">
+            <li class="has-submenu" tabindex="0" #submenu>
 
-                <input type="checkbox" id="catalog-toggle">
+                <input type="checkbox" id="catalog-toggle" #catalogToggleCheckbox>
 
                 <a [routerLink]="['/']" fragment="catalog" (click)="setCategoria(null)">
-                    <span id="catalog-span">Catálogo</span>
+                    <span class="catalog-span">Catálogo</span>
                 </a>
 
                 <label for="catalog-toggle" class="caret-toggle">
@@ -43,18 +43,26 @@
             </li>
 
             <li>
-                <a [routerLink]="['/carrito']">
-                    <span>Carrito </span>
+                <a [routerLink]="['/carrito']" class="carrito">
+                    <span>Carrito</span>
                     <i class="fa-solid fa-cart-shopping"></i>
                     @let cart = cartService.cart();
                     <span class="cart-length"><b>{{cart.length}}</b></span>
                 </a>
             </li>
             <li>
+                @if(authService.currUserSign() === null){
                 <a [routerLink]="['/login']">
                     <i class="fa fa-user"></i>
                     <span>Iniciar Sesión</span>
                 </a>
+                }
+                @if (authService.currUserSign()) {
+                <a [routerLink]="['/profile']">
+                    <i class="fa fa-user"></i>
+                    <span>Mi Perfil</span>
+                </a>
+                }
             </li>
         </ul>
     </nav>

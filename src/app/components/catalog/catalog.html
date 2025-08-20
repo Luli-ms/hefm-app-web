@@ -21,13 +21,6 @@
             </div>
 
             <div class="dropdown-container">
-                <label for="dropdown-um">u. medida:</label>
-                <select name="um" id="dropdown-um" [(ngModel)]="umFilter" (change)="onUmChange()">
-                    <option value="unidad">Unidad</option>
-                    <option value="caja">Caja</option>
-                </select>
-            </div>
-            <div class="dropdown-container">
                 <label for="dropdown-group">Agrupar por:</label>
                 <select name="group" id="dropdown-group" (change)="onGroupChange($event)">
                     <option value="category">Categoría</option>
@@ -54,20 +47,33 @@
     <div class="card-container" data-simplebar>
         @for (prod of grouped.prods; track prod.id) {
         @for (f of prod.format; track $index) {
-        <div class="card" [routerLink]="['/detalles', prod.id]" [queryParams]="{formatId: f.formatId}">
+        <div class="card" [routerLink]="(isDisponible(f)) ? ['/detalles', prod.id] : null"
+            [queryParams]="{formatId: f.formatId}" [ngClass]="{ 'no-disponible': !isDisponible(f)}">
+
             <p class="product-id">{{ prod.id }}</p>
             <p class="product-um">u/m: {{ f.um }}</p>
             <img [src]="f.img" [alt]="prod.prodName + ' ' + f.format" width="200" height="200" class="format-img" />
             <p class="product-name"><b>{{ prod.prodName }}</b></p>
             <span class="format-text">
-                <p><b>FORMATO: <span style="font-family: monospace;">{{ f.format }}</span></b></p>
+                <p><b>FORMATO: <span>{{ f.format }}</span></b></p>
                 <p>{{ f.desc }}</p>
-                <br>
-                @if (!f.price.lvl1) {
-                <p><span style="font-family: monospace;">No disponible</span></p>
-                } @else {
-                <p><span style="font-family: monospace;">{{ f.price.lvl1 | number:'1.2-2' }} €</span></p>
+                <p>
+                    @if(!hayDescuento(f)) {
+                    <span>{{ f.precioFinal | currency:'EUR':'symbol':'1.2-2' }}</span>
+                    } @else {
+                    <span class="rebajado">
+                        {{ f.price.lvl1 | currency:'EUR':'symbol':'1.2-2' }}
+                    </span>
+                    <span>
+                        {{ f.precioFinal | currency:'EUR':'symbol':'1.2-2' }}
+                    </span>
+                    }
+                    @if (isDisponible(f)) {
+                <p class="msj">* Sin IGIC incluido</p>
                 }
+                </p>
+                <br>
+
             </span>
             <div class="add-cart" (click)="addToCart(prod, f, $event)">
                 Añadir al carrito

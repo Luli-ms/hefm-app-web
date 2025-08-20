@@ -1,0 +1,67 @@
+<div class="modal-overlay" (click)="closeModal()">
+    <div class="modal" (click)="$event.stopPropagation()">
+        <button class="close-btn" (click)="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+        @if (!isPedidoFinalizado) {
+        <h2>Pedido:</h2>
+        @if (cartService.cart().length === 0) {
+        <div class="no-prods">
+            <p>No hay productos en el carrito</p>
+            <button type="submit" [routerLink]="['/']" fragment="catalog" (click)="setCategoria(null)">Empezar a
+                comprar!</button>
+        </div>
+        } @else {
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Detalle</th>
+                        <th>Cantidad</th>
+                        <th>Precio x Ud</th>
+                        <th>IGIC %</th>
+                        <th>Importe Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @for (cartItem of cartService.cart(); track cartItem.prod.id) {
+                    @let item = cartItem.prod;
+                    @let format = cartItem.format;
+                    <tr>
+                        <td>
+                            <strong>{{ item.prodName }}</strong>
+                            <small> ({{ format.um }} - {{ format.format }})</small>
+                        </td>
+                        <td>{{ cartItem.cantidad }}</td>
+                        <td>{{ format.precioFinal | currency:'EUR' }}</td>
+                        <td>{{ (orderService.getIgicRate(item) * 100) | number:'1.0-0' }}%</td>
+                        <td>{{ getImporteTotal(format, cartItem, item) | currency:'EUR'}}</td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        }
+
+        <p class="error">{{errorMessageSignal()}}</p>
+        @if(authService.currUserSign() === null){
+        <button type="submit" [routerLink]="['/login']" (click)="closeModal()">Iniciar sesión</button>
+        }
+
+        <div class="modal-total"><strong>Total:</strong> {{ totalWithIGIC | currency:'EUR' }}</div>
+        } @else {
+        <div class="alert">
+            <i class="fa-solid fa-envelope-open-text" aria-hidden="true"></i>
+            <span><strong>Revise su bandeja de entrada</strong> para comprobar la confirmación del pedido.</span>
+        </div>
+
+        }
+        @if(isPedidoFinalizado) {
+        <button type="submit" (click)="closeModal()">
+            SALIR
+        </button>
+        } @else {
+        <button type="submit" [disabled]="!isSubmitEnabled()" (click)="onSubmit()">
+            ENVÍAR PEDIDO
+        </button>
+        }
+    </div>
+</div>
