@@ -10,10 +10,6 @@ a i {
     margin-right: 10px;
 }
 
-a.carrito {
-    padding-right: 40px !important;
-}
-
 /* ─────────────── NAVBAR LAYOUT ─────────────── */
 header {
     position: fixed;
@@ -74,12 +70,15 @@ header .navbar ul li a:focus-within {
 .fa-cart-shopping {
     position: absolute;
     font-size: 1.1rem;
+    margin-right: 1rem;
 }
 
 .cart-length {
     position: relative;
+    z-index: 10;
     top: -20px;
     left: 6px;
+    margin-right: 0.7rem;
 
     font-family: monospace;
     display: inline-block;
