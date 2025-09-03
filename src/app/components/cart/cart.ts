@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, computed, inject, NgZone } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -6,10 +6,8 @@ import { ProductInterface } from '../../models/product.interface';
 import { FormatInterface } from '../../models/format.interface';
 import { OrderService } from '../../services/order.service';
 import { ProductService } from '../../services/product.service';
-import { AuthService } from '../../services/auth.service';
 import { OrderModal } from '../order-modal/order-modal';
 import { FormsModule } from "@angular/forms";
-import { CartInterface } from '../../models/cart.interface';
 
 @Component({
   selector: 'app-cart',

@@ -16,15 +16,17 @@ const corsHandler = cors({
 
 // Transporter Nodemailer usando App Password
 const transporter = nodemailer.createTransport({
-    service: "gmail",
+    host: "smtp.hostinger.com",
+    port: 465,
+    secure: true,
     auth: {
         user: process.env.APP_EMAIL,
-        pass: process.env.APP_PASSWORD   // App Password de Gmail
+        pass: process.env.APP_PASSWORD   // App Password de Hostinger
     }
 });
 
 exports.sendOrderEmail = functions.https.onRequest(
-    { secrets: ["APP_EMAIL", "APP_PASSWORD"] },
+    { secrets: ["APP_PASSWORD", "APP_EMAIL"] },
     (req, res) => {
         corsHandler(req, res, async () => {
             if (req.method !== "POST") {
@@ -44,9 +46,11 @@ exports.sendOrderEmail = functions.https.onRequest(
                 return;
             }
 
-            const mailCopy = {
+            // Mensaje pedido
+            const mailOrder = {
                 from: `"HEFM" <${process.env.APP_EMAIL}>`,
                 to: email,
+                replyTo: process.env.APP_EMAIL,
                 subject: "Confirmación de pedido",
                 text: `Hola ${name}, tu pedido de ${total.toFixed(2)}€ ha sido recibido.`,
                 html: `
@@ -73,10 +77,11 @@ exports.sendOrderEmail = functions.https.onRequest(
                 `
             };
 
-            // Mensaje pedido
-            const mailOrder = {
+            // Copia
+            const mailCopy = {
                 from: `"HEFM" <${process.env.APP_EMAIL}>`,
                 to: process.env.APP_EMAIL,
+                replyTo: email,
                 subject: "Nuevo pedido recibido",
                 text: `Pedido de ${name} (${email}): ${total}€`,
                 html: `
