@@ -53,13 +53,14 @@ export class OrderModal {
     this.closeModal();
   }
 
-  onSubmit() {
+  async onSubmit() {
+    const orderId = await this.orderService.generateConsecutiveId();
     const total = this.totalWithIGIC;
     const name = this.authService.currUserSign()!.name;
     const email = this.authService.currUserSign()!.email;
     const order = this.cartService.cart();
 
-    this.orderService.sendOrder({ total, name, email, order });
+    this.orderService.sendOrder({ orderId, total, name, email, order }); /*orderId,*/
 
     this.isPedidoFinalizado = true;
   }
