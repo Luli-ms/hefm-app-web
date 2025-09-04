@@ -2,7 +2,7 @@ const { setGlobalOptions } = require("firebase-functions");
 const functions = require("firebase-functions");
 const nodemailer = require("nodemailer");
 const cors = require("cors");
-
+const crypto = require("crypto");
 
 setGlobalOptions({ maxInstances: 10 });
 
@@ -46,16 +46,18 @@ exports.sendOrderEmail = functions.https.onRequest(
                 return;
             }
 
+            const orderId = crypto.randomUUID();
+
             // Mensaje pedido
             const mailOrder = {
                 from: `"HEFM" <${process.env.APP_EMAIL}>`,
                 to: email,
                 replyTo: process.env.APP_EMAIL,
-                subject: "Confirmación de pedido",
-                text: `Hola ${name}, tu pedido de ${total.toFixed(2)}€ ha sido recibido.`,
+                subject: `Confirmación de pedido #${orderId}`,
+                text: `Hola ${name}, tu pedido (${orderId}) de ${total.toFixed(2)}€ ha sido recibido.`,
                 html: `
                     <h2>Hola ${name},</h2>
-                    <p>Tu pedido de <b>${total.toFixed(2)}€</b> ha sido recibido.</p>
+                    <p>Tu pedido <b>#${orderId}</b> de <b>${total.toFixed(2)}€</b> ha sido recibido.</p>
                     <h3>Detalles del pedido:</h3>
                     <ul>
                     ${orderDetails.map(item => {
@@ -82,10 +84,10 @@ exports.sendOrderEmail = functions.https.onRequest(
                 from: `"HEFM" <${process.env.APP_EMAIL}>`,
                 to: process.env.APP_EMAIL,
                 replyTo: email,
-                subject: "Nuevo pedido recibido",
-                text: `Pedido de ${name} (${email}): ${total}€`,
+                subject: `Nuevo pedido recibido (#${orderId})`,
+                text: `Pedido #${orderId} de ${name} (${email}): ${total}€`,
                 html: `
-                    <p>Pedido de ${name} (${email}): <b>${total}€</b></p>
+                    <p>Pedido <b>#${orderId}</b> de ${name} (${email}): <b>${total}€</b></p>
                     <h3>Detalles del pedido:</h3>
                     <ul>
                     ${orderDetails.map(item => {
